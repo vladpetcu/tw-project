@@ -1,0 +1,92 @@
+
+html, body {
+	margin:0 auto;
+	padding:0;
+	height:100%;
+	overflow-x:hidden;
+}
+header, section, footer{
+	margin:0;
+	padding:1px;
+}
+header{
+	position:relative;
+	background:#dcdcdc;
+	color:#006400;
+	padding-top: 1%;
+	min-height: 10%;
+	width:100%;
+	border-bottom: 	#2f4f4f 3px solid;
+}
+
+header nav ul {	
+	list-style-type: none;
+	margin: 0;
+	padding-left: 10%;
+	padding-right: 10%;
+	overflow: hidden;
+	background-color: #333;
+}	
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 23px 25px;
+	text-decoration: none;
+}
+
+li .logo{
+	padding:23px;
+	padding-left:750px;
+}
+
+li .logo img{
+	position:absolute;
+	z-index:100;
+	max-height:80px;
+	min-width:70px;
+	border-radius:50%;
+	background:black;
+}
+
+li .menu-button:hover {
+	background-color: #111;
+}
+
+body .main-section{
+	padding-right: 10%;
+	padding-left: 10%;
+	background-image:url('./mountain1.jpg');
+	opacity:0.6;
+	min-height:79%;
+}
+
+.main-section div{
+	margin:auto;
+	
+}
+
+div h1{
+	text-decoration:none;
+	font-size:3vw;
+	font-family: Verdana, sans-serif;
+}
+
+div h3{
+	font-family: Verdana, sans-serif;
+	font-size:1vw;
+}
+
+footer{
+	background-color:#333;
+	color:white;
+	min-height:7%;
+	text-align:center;
+	padding-top:5px;
+}
+
