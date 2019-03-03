@@ -43,7 +43,7 @@ input[type=password]{
 button{
 	background:#bfd9d9;
 	color:black;
-	padding:1em 1.5em;
+	padding:1em 1em;
 	margin:0.4em 0 0;
 	border:none;
 	cursor:pointer;
@@ -54,19 +54,33 @@ button{
 button:hover{
 	opacity:1.1;
 }
-.signup-button{
+
+.signup-button,
+.login-button{
 background:#4dff4d;
 }
+
 .to-login,
 .signup-button{
 	float:left;
 	width:50%;
 }
-
+.to-signup,
+.login-button{
+	float:left;
+	width:50%;
+}
 .clearfix::after{
 	content:"";
 	clear:both;
 	display:table;
+}
+#rememberme b{
+	font-size:1.4em;
+}
+#rememberme input[type=checkbox]{
+	margin-bottom:1.5em;
+	margin-top:2em;
 }
 
 hr{
@@ -76,6 +90,10 @@ hr{
 @media screen and (max-width:350px){
 	.to-login,
 	.signup-button{
+		width:100%;
+	}
+	.to-signup,
+	.login-button{
 		width:100%;
 	}
 }
