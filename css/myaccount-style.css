@@ -43,7 +43,11 @@ input[type=password]{
 button{
 	background:#bfd9d9;
 	color:black;
+<<<<<<< HEAD
 	padding:1em 1em;
+=======
+	padding:1em 1.5em;
+>>>>>>> b6cf757086e48953a929b9a25cc71016e9750ac5
 	margin:0.4em 0 0;
 	border:none;
 	cursor:pointer;
@@ -54,27 +58,38 @@ button{
 button:hover{
 	opacity:1.1;
 }
+<<<<<<< HEAD
 
 .signup-button,
 .login-button{
 background:#4dff4d;
 }
 
+=======
+.signup-button{
+background:#4dff4d;
+}
+>>>>>>> b6cf757086e48953a929b9a25cc71016e9750ac5
 .to-login,
 .signup-button{
 	float:left;
 	width:50%;
 }
+<<<<<<< HEAD
 .to-signup,
 .login-button{
 	float:left;
 	width:50%;
 }
+=======
+
+>>>>>>> b6cf757086e48953a929b9a25cc71016e9750ac5
 .clearfix::after{
 	content:"";
 	clear:both;
 	display:table;
 }
+<<<<<<< HEAD
 #rememberme b{
 	font-size:1.4em;
 }
@@ -82,6 +97,8 @@ background:#4dff4d;
 	margin-bottom:1.5em;
 	margin-top:2em;
 }
+=======
+>>>>>>> b6cf757086e48953a929b9a25cc71016e9750ac5
 
 hr{
 	border:0.2em solid white;
@@ -92,8 +109,11 @@ hr{
 	.signup-button{
 		width:100%;
 	}
+<<<<<<< HEAD
 	.to-signup,
 	.login-button{
 		width:100%;
 	}
+=======
+>>>>>>> b6cf757086e48953a929b9a25cc71016e9750ac5
 }
