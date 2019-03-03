@@ -1,0 +1,99 @@
+.main-section{
+	font-family:sans-serif;
+}
+
+
+.forms-container{
+	padding:1.6em;
+	max-width:45em;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3em;
+	margin-bottom:3em;
+	background:linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
+	background:-webkit-linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
+	background:-moz-linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
+	background:-o-linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
+	color:white;
+}
+
+.forms-container h1{
+	font-size:1.9em;
+	text-align:center;
+	color:#bfd9d9;
+}
+
+label b{
+	font-size:1.7em;
+}
+input[type=text], 
+input[type=password]{
+	width:100%;
+	padding:0.5em;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:0.5em;
+	margin-bottom:1em;
+	display:inline-block;
+	border:none;
+	background:#f1f1f1;
+	font-size:1.7em;
+}
+	
+button{
+	background:#bfd9d9;
+	color:black;
+	padding:1em 1em;
+	margin:0.4em 0 0;
+	border:none;
+	cursor:pointer;
+	width:100%;
+	opacity:0.9;
+	font-size:1.6em;
+}
+button:hover{
+	opacity:1.1;
+}
+
+.signup-button,
+.login-button{
+background:#4dff4d;
+}
+
+.to-login,
+.signup-button{
+	float:left;
+	width:50%;
+}
+.to-signup,
+.login-button{
+	float:left;
+	width:50%;
+}
+.clearfix::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+#rememberme b{
+	font-size:1.4em;
+}
+#rememberme input[type=checkbox]{
+	margin-bottom:1.5em;
+	margin-top:2em;
+}
+
+hr{
+	border:0.2em solid white;
+}
+
+@media screen and (max-width:350px){
+	.to-login,
+	.signup-button{
+		width:100%;
+	}
+	.to-signup,
+	.login-button{
+		width:100%;
+	}
+}

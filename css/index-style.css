@@ -6,6 +6,12 @@ html, body {
 	height:100%;
 	overflow-x:hidden;
 }
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
 header, section, footer{
 	margin:0;
 	padding:0.1em;
@@ -19,7 +25,7 @@ header{
 	border-bottom: 	#2f4f4f 0.3em solid;
 }
 
-header nav .ul-navmenu {	
+header nav .ul-navmenu{	
 	list-style-type: none;
 	margin: 0;
 	padding-left: 10%;
@@ -28,7 +34,7 @@ header nav .ul-navmenu {
 	background-color: #333;
 }	
 
-li {
+li{
 	float: left;
 }
 
@@ -129,6 +135,7 @@ body .main-section{
 .frequent-questions div p{
 	font-size:1.4em;
 	margin-top:0.3em;
+	text-align:center;
 }
 .frequent-questions div ul{
 	margin-top:0.3em;
@@ -136,9 +143,10 @@ body .main-section{
 }
 
 footer{
+	bottom:0;
 	background-color:#333;
 	color:white;
-	min-height:4em;
+	min-height:5.1em;
 	font-size:1.4em;
 	text-align:center;
 	padding-top:0.5em;

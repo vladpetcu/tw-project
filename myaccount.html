@@ -5,6 +5,9 @@
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 	<title>OLX</title>
 		<link rel="stylesheet" type="text/css" href="./css/index-style.css">
+		<link rel="stylesheet" type="text/css" href="./css/myaccount-style.css">
+		
+	
 	</head>
 	
 	<body>
@@ -13,7 +16,7 @@
 				<nav>
 					<ul class="ul-navmenu">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="">My Account</a></li>
+						<li><a href="myaccount.html">Account</a></li>
 						<li><a href="">News</a></li>
 						<li><a href="./scholaryHTML/scholary.html">About</a></li>
 					</ul>				
@@ -25,13 +28,54 @@
 		</header>
 		
 		<section class="main-section">
-			
-			
-			
+			<div class="forms-container">
+				<div id="log-form" style="display:block">
+					<form id="form-login" action="" method="post" >
+						<h1>Log In Now</h1>
+						<hr>
+						<label for="uid"><b>Username</b></label>
+						<input type="text" id="nume-sign" name="uid" placeholder="Enter username or email">
+						
+						<label for="pwd"><b>Password</b></label>
+						<input type="password" id="pwd-sign" name="pwd" placeholder="Enter password">
+						
+						<label id="rememberme">
+							<input type="checkbox" checked="checked" name="remember">
+							<b>Remember me</b>
+						</label>
+						<div class="clearfix">
+							<button type="button" class="to-signup">Go to Sign Up</button>
+							<button type="button" class="login-button">Log In</button>
+						</div>
+					</form>
+				</div>
+				<div id="sign-form" style="display:none">
+					<form id="form-signup" action="" method="post" >
+						<h1>Sign Up Now</h1>
+						<hr>
+						<label for="uid"><b>Username</b></label>
+						<input type="text" id="nume-sign" name="uid" placeholder="Enter username">
+						
+						<label for="mail"><b>Email</b></label>
+						<input type="text" id="mail-sign" name="mail" placeholder="Enter email">
+						
+						<label for="pwd"><b>Password</b></label>
+						<input type="password" id="pwd-sign" name="pwd" placeholder="Enter password">
+						
+						<label for="pwd-repeat"><b>Repeat Password</b></label>
+						<input type="password" id="pwd-sign-repeat" name="pwd-repeat" placeholder="Enter password again">
+						<div class="clearfix">
+							<button type="button" class="to-login">Go to Log In</button>
+							<button type="button" class="signup-button">Sign Up</button>
+						</div>
+					</form>
+				</div>
+			</div>
 		</section>
-		
 		<footer>
 			<p>OLX - Web Application - Copyright & copy 2019</p>
 		</footer>
+		
+		<script src="./js/forms-switch.js"></script>
 	</body>
 </html>
