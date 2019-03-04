@@ -1,5 +1,21 @@
-De adaugat:
-	homepage-> Intrebari frecvente/ chestii orientative . sub forma de grid
+Obligatoriu Ajax
+Fara frameworkuri
+Fara jquery
 
 
 https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html
+
+
+
+
+
+User ->
+		Profil - poza/adresa/descriere/etc + feedback primit
+		De interes - anunturi doar cu categoriile din lista de interes
+		Anunturi proprii
+		
+		
+		Notificari - primeste notificare cand se posteaza ceva din categoriile de interes
+			+
+		search bar
+		

@@ -10,7 +10,7 @@ function switchToSignupForm(){
 		divSignup.style.display = "block";
 	}
 	else
-		alert("Error: switchToSignupForm()");
+		console.log("Error: switchToSignupForm()");
 }
 
 function switchToLoginForm(){
@@ -22,7 +22,7 @@ function switchToLoginForm(){
 		divSignup.style.display = "none";
 	}
 	else
-		alert("Error: switchToLoginForm()");
+		console.log("Error: switchToLoginForm()");
 } 
 
 elem1.onclick = switchToSignupForm;
