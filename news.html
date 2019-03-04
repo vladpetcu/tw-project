@@ -33,6 +33,7 @@
 			<div class="news-container">
 				<ul id="news-ul" class="news-list">
 					<li>
+<<<<<<< HEAD
 						<img src="./images/mountain1.jpg" alt="">
 						<div>
 							<h3>list item 0</h3>
@@ -53,6 +54,17 @@
 					<li>list item 3</li>
 					<li>list item 4</li>
 					<li>list item 5</li>
+=======
+						<img src="./images/user.png" alt="">
+						<h3>list item 1</h3>
+						<p>description</p>
+					</li>
+					<li>list item 2</li>
+					<li>list item 1</li>
+					<li>list item 2</li>
+					<li>list item 1</li>
+					<li>list item 2</li>
+>>>>>>> 8d127eb92a4e52bb0e93786d6aa98078629ffa33
 				</ul>
 			</div>
 		</main>
@@ -62,6 +74,7 @@
 		</footer>
 		<script>
 				const dataFromDB = {
+<<<<<<< HEAD
 					image: "Image here",
 					hash3: "Hash 3 here",	
 					description: "This is the description",
@@ -90,6 +103,23 @@
 					theNewLi.appendChild(pElem);*/
 					//liElem.innerText = `"${data.description}" a fost creat de ${data.author} la data de ${data.date}.`;
 					//newsUlElem.innerHTML = newsUlElem.innerHTML + `<li>${data.description}" a fost creat de ${data.author} la data de ${data.date}.</li>`;
+=======
+				  description: "This is the description",
+				  date: "24.03.2019",
+				  author: "Ionuț",
+
+				}
+			
+				function renderNewsArticle(data) {
+				  let newsUlElem = document.getElementsByClassName("news-list")[0];
+			  
+				  let liElem = document.createElement("li");
+				  liElem.innerText = `"${data.description}" a fost creat de ${data.author} la data de ${data.date}.`;
+			  
+				  newsUlElem.appendChild(liElem);
+			
+				  //newsUlElem.innerHTML = newsUlElem.innerHTML + `<li>${data.description}" a fost creat de ${data.author} la data de ${data.date}.</li>`;
+>>>>>>> 8d127eb92a4e52bb0e93786d6aa98078629ffa33
 				}
 			
 				renderNewsArticle(dataFromDB);
