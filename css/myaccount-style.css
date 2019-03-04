@@ -1,7 +1,7 @@
+
 .main-section{
 	font-family:sans-serif;
 }
-
 
 .forms-container{
 	padding:1.6em;
@@ -52,14 +52,18 @@ button{
 	font-size:1.6em;
 }
 button:hover{
-	opacity:1.1;
+	opacity:1.5;
+	background:#65a5a5;
 }
 
 .signup-button,
 .login-button{
 background:#4dff4d;
 }
-
+.signup-button:hover,
+.login-button:hover{
+background:#33c433;
+}
 .to-login,
 .signup-button{
 	float:left;

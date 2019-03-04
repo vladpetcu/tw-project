@@ -8,11 +8,8 @@ html, body {
 }
 *{
 	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-o-box-sizing:border-box;
 }
-header, section, footer{
+header, main, footer{
 	margin:0;
 	padding:0.1em;
 }
@@ -20,7 +17,7 @@ header{
 	background:#dcdcdc;
 	color:#006400;
 	min-height: 10em;
-	max-height:auto;
+	
 	width:auto;
 	border-bottom: 	#2f4f4f 0.3em solid;
 }

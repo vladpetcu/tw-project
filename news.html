@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<title>OLX</title>
+		<link rel="stylesheet" type="text/css" href="./css/index-style.css">
+		<link rel="stylesheet" type="text/css" href="./css/news-style.css">
+
+	</head>
+	
+	<body>
+		<header>
+			<div>
+				<nav>
+					<ul class="ul-navmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="myaccount.html">Account</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="./scholaryHTML/scholary.html">About</a></li>
+					</ul>				
+				</nav>
+			</div>	
+			<div id="logo-div">
+					<a class="logo" href="./index.html"><img src="./images/logo2.png" alt="Avatar"></a>
+			</div>
+		</header>
+		
+		<main class="main-section">
+			<div class="news-title">
+				<h2>Urmareste cele mai noi postari!</h2>
+			</div>
+			<div class="news-container">
+				<ul id="news-ul" class="news-list">
+					<li>
+						<img src="./images/user.png" alt="">
+						<h3>list item 1</h3>
+						<p>description</p>
+					</li>
+					<li>list item 2</li>
+					<li>list item 1</li>
+					<li>list item 2</li>
+					<li>list item 1</li>
+					<li>list item 2</li>
+				</ul>
+			</div>
+		</main>
+		
+		<footer>
+			<p>OLX - Web Application - Copyright & copy 2019</p>
+		</footer>
+		<script>
+				const dataFromDB = {
+				  description: "This is the description",
+				  date: "24.03.2019",
+				  author: "Ionuț",
+
+				}
+			
+				function renderNewsArticle(data) {
+				  let newsUlElem = document.getElementsByClassName("news-list")[0];
+			  
+				  let liElem = document.createElement("li");
+				  liElem.innerText = `"${data.description}" a fost creat de ${data.author} la data de ${data.date}.`;
+			  
+				  newsUlElem.appendChild(liElem);
+			
+				  //newsUlElem.innerHTML = newsUlElem.innerHTML + `<li>${data.description}" a fost creat de ${data.author} la data de ${data.date}.</li>`;
+				}
+			
+				renderNewsArticle(dataFromDB);
+			  </script>
+	</body>
+</html>
