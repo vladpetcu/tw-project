@@ -33,15 +33,26 @@
 			<div class="news-container">
 				<ul id="news-ul" class="news-list">
 					<li>
-						<img src="./images/user.png" alt="">
-						<h3>list item 1</h3>
-						<p>description</p>
+						<img src="./images/mountain1.jpg" alt="">
+						<div>
+							<h3>list item 0</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+									galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+									m is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							</p>
+						</div>
+					</li>
+					<li>
+						<img src="./images/personal.png" alt="">
+						<div>
+							<h3>list item 1</h3>
+							<p>description</p>
+						</div>
 					</li>
 					<li>list item 2</li>
-					<li>list item 1</li>
-					<li>list item 2</li>
-					<li>list item 1</li>
-					<li>list item 2</li>
+					<li>list item 3</li>
+					<li>list item 4</li>
+					<li>list item 5</li>
 				</ul>
 			</div>
 		</main>
@@ -51,21 +62,34 @@
 		</footer>
 		<script>
 				const dataFromDB = {
-				  description: "This is the description",
-				  date: "24.03.2019",
-				  author: "Ionuț",
-
+					image: "Image here",
+					hash3: "Hash 3 here",	
+					description: "This is the description",
+					date: "24.03.2019",
+					author: "Ionuț"
 				}
 			
 				function renderNewsArticle(data) {
-				  let newsUlElem = document.getElementsByClassName("news-list")[0];
-			  
-				  let liElem = document.createElement("li");
-				  liElem.innerText = `"${data.description}" a fost creat de ${data.author} la data de ${data.date}.`;
-			  
-				  newsUlElem.appendChild(liElem);
-			
-				  //newsUlElem.innerHTML = newsUlElem.innerHTML + `<li>${data.description}" a fost creat de ${data.author} la data de ${data.date}.</li>`;
+					let newsUlElem = document.getElementById("news-ul");
+					let liElem = document.createElement("li");
+					newsUlElem.insertBefore(liElem, newsUlElem.firstChild);
+					
+					let theNewLi = document.getElementById("news-ul").firstElementChild;
+					let imgElem = document.createElement("img");
+					let divElem = document.createElement("div");
+					theNewLi.appendChild(imgElem);
+					theNewLi.appendChild(divElem);
+
+					let theNewDiv = theNewLi.getElementsByTagName('div')[0];
+					let h3Elem = document.createElement("h3");
+					let pElem = document.createElement("p");
+					theNewDiv.appendChild(h3Elem);
+					theNewDiv.appendChild(pElem);
+					
+					/*
+					theNewLi.appendChild(pElem);*/
+					//liElem.innerText = `"${data.description}" a fost creat de ${data.author} la data de ${data.date}.`;
+					//newsUlElem.innerHTML = newsUlElem.innerHTML + `<li>${data.description}" a fost creat de ${data.author} la data de ${data.date}.</li>`;
 				}
 			
 				renderNewsArticle(dataFromDB);
