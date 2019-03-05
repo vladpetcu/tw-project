@@ -6,3 +6,19 @@ html, body {
 	height:100%;
 	overflow-x:hidden;
 }
+
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+body main{
+	background: #9400bf;
+}
+div{
+	padding: 3em;
+	font-size: 2em;
+}
+
+img{
+	max-width: 600px;
+}

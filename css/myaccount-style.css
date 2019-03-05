@@ -1,6 +1,7 @@
 
-.main-section{
+body .main-section{
 	font-family:sans-serif;
+	background-image:url('../images/mountain2.jpg');
 }
 
 .forms-container{

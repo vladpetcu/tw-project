@@ -15,9 +15,7 @@ header, main, footer{
 }
 header{
 	background:#dcdcdc;
-	color:#006400;
 	min-height: 10em;
-	
 	width:auto;
 	border-bottom: 	#2f4f4f 0.3em solid;
 }
@@ -62,6 +60,52 @@ li a {
 
 li a:hover {
 	background-color: #111;
+}
+
+body header .menu-button-container{
+	background-color: white;
+	display: none;
+}
+
+body header .menu-button-container .m-button {
+  display: inline-block;
+  border-radius: 0.5em;
+  background-color: #2f4f4f;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+  width: 180px;
+  cursor: pointer;
+	margin: 0.3em;
+}
+
+body header .menu-button-container .m-button:focus{
+	outline: none;
+}
+
+body header .menu-button-container .m-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+body header .menu-button-container .m-button span:after {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+body header .menu-button-container .m-button:hover span {
+  padding-right: 2.5px;
+}
+
+body header .menu-button-container .m-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 body .main-section{
@@ -189,6 +233,7 @@ footer{
 		position:relative;
 		max-height:5em;
 		min-width:4em;
+		display: none;
 	}
 	header{
 		background:#333;
@@ -200,5 +245,32 @@ footer{
 	}
 	.frequent-questions{
 		grid-template-columns: repeat(auto-fill, minmax(98%, 1fr));
+	}
+	
+	body header .menu-button-container{
+		background-color: rgb(36, 36, 36);
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+	}
+	body header .menu-button-container .m-img{
+		
+		margin-top: 0.8em;
+		margin-bottom: 0.3em;
+		margin-right: 1em; 
+	}
+	
+	body header .menu-button-container .m-img img{
+		max-height: 80px;
+		max-width: 70px;
+		float: right;
+	}
+
+	body header{
+		min-height: 80px;
+		height: 80px;
+	}
+
+	body header .menu-container{
+		display: none;
 	}
 }
