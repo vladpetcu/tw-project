@@ -4,7 +4,7 @@ html, body {
 	margin:0 auto;
 	padding:0;
 	height:100%;
-	overflow-x:hidden;
+	overflow:auto;
 }
 *{
 	box-sizing:border-box;
@@ -117,7 +117,7 @@ body .main-section{
 	background-attachment: fixed;
 	background-size:  cover;
 	background-color: #999;
-	min-height:55em;
+	min-height:76vh;
 }
 
 .main-section .motto{

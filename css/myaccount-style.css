@@ -92,7 +92,7 @@ hr{
 	border:0.2em solid white;
 }
 
-@media screen and (max-width:350px){
+@media screen and (max-width:390px){
 	.to-login,
 	.signup-button{
 		width:100%;
