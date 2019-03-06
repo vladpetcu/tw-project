@@ -14,7 +14,7 @@ body .main-section{
     width: 50%;
     float: left;
     margin:0;
-    padding: 0;
+    padding-right: 0px;
 }
 .main-section #guide-container{
     background: linear-gradient(to bottom,rgba(0,0,0,0.8), rgb(47, 79, 79, 0.9));
@@ -68,9 +68,13 @@ body .main-section .skol{
     min-width: 150px;
     text-align: center;
     padding: 5px;
+    border-radius: 5px;
+    box-shadow: -3px 5px #999;
+    text-shadow: 2px 1px rgb(47, 79, 79);
 }
 body .main-section .skol:hover{
-    text-shadow: 2px 1px rgb(47, 79, 79);
+    box-shadow: -1px 1px #999;
+    transform: translateY(5px);
 }
 
 
@@ -88,7 +92,6 @@ body .main-section .skol:hover{
     .main-section #report-container{
         width: 100%;
         border-bottom: 1px solid antiquewhite;
-
     }
 
     .main-section #guide-container{

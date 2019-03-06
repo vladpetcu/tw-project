@@ -1,7 +1,6 @@
 var topMargin = 0;
 var leftMargin = 0;
-console.log(window.innerWidth);
-console.log(window.innerHeight);
+
 let container1 = document.getElementsByClassName("skol")[0];
 let container2 = document.getElementsByClassName("skol")[1];
 
@@ -17,7 +16,7 @@ else if(window.innerWidth < 500){
     container2.style.marginLeft = parseInt((window.innerWidth / 2 ) - 75).toString() + "px";
 }
 
-window.onresize = function(event) {
+window.onresize = function() {
     leftMargin = parseInt(((window.innerWidth / 2 ) - 150) / 2);
     topMargin = parseInt((window.innerHeight / 2 ) - 75);
     let leftUnit = leftMargin.toString() + "px";

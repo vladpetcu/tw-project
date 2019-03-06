@@ -11,7 +11,7 @@ html, body {
 }
 header, main, footer{
 	margin:0;
-	padding:0.1em;
+	padding:0.1px;
 }
 header{
 	background:#dcdcdc;
@@ -109,6 +109,7 @@ body header .menu-button-container .m-button:hover span:after {
 }
 
 body .main-section{
+	padding-bottom: 0;
 	padding-right: 10%;
 	padding-left: 10%;
 	background-image:url('../images/mountain1.jpg');
@@ -208,7 +209,6 @@ footer{
 	}
 	header{
 		min-height:9em;
-		max-height:10em;
 	}
 	.frequent-questions{
 		grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
