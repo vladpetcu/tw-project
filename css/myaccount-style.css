@@ -88,6 +88,19 @@ background:#33c433;
 	margin-top:2em;
 }
 
+#terms-cond{
+	font-size:1.4em;
+	margin-top:2em;
+}
+#terms-cond a{
+	color: antiquewhite;
+	font-style: italic;
+	text-decoration: none;
+}
+#terms-cond a:hover{
+	color: darkgrey;
+}
+
 hr{
 	border:0.2em solid white;
 }
