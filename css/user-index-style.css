@@ -1,0 +1,29 @@
+html, body {
+	font-size:16px;
+	margin:0 auto;
+    padding:0;
+    
+	height:100%;
+	overflow:auto;
+}
+*{
+	box-sizing:border-box;
+}
+
+.main-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
+}
+
+.main-section #menu-sidebar{
+    background-color: red;
+    min-width: 500px;
+}
+
+.main-section #content-container{
+    background-color: green;
+}

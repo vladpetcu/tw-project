@@ -104,15 +104,6 @@ body header .menu-button-container .m-button span:after {
   transition: 0.5s;
 }
 
-body header .menu-button-container .m-button:hover span {
-  padding-right: 20.5px;
-}
-
-body header .menu-button-container .m-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 body .main-section{
 	min-height:100vh;
 	width: auto;
@@ -242,14 +233,37 @@ footer{
 		min-width:4em;
 		display: none;
 	}
+
 	header{
 		background:#333;
-		min-height:17em;
+		min-height:80px;
+		height: 80px;
 	}
+
+	body header .menu-container{
+		display: none;
+	}
+
 	header div{
 		display:block;
 		float:none;
 	}
+
+	.sticky {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+	}
+
+	header .menu-container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.top-minus{
+		margin-top: -170px;
+	}
+
 	.frequent-questions{
 		grid-template-columns: repeat(auto-fill, minmax(98%, 1fr));
 	}
@@ -270,15 +284,6 @@ footer{
 		min-height: 6.3em;
 		max-width: 40vw;
 		float: right;
-	}
-
-	body header{
-		min-height: 80px;
-		height: 80px;
-	}
-
-	body header .menu-container{
-		display: none;
 	}
 }
 

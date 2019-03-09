@@ -4,9 +4,21 @@ body .main-section{
 	background-image:url('../images/mountain2.jpg');
 }
 
+#wizard{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3em;
+	margin-bottom:3em;
+	max-width: 45em;
+	text-align: center;
+	color:black;
+	font-style: bold;
+	font-size: 15px;
+}
+
 .forms-container{
 	padding:1.6em;
-	max-width:45em;
+	max-width:50rem;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:3em;

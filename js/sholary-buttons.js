@@ -18,8 +18,7 @@ else if(window.innerWidth < 500){
 
 function resizeButtons() {
     leftMargin = parseInt(((window.innerWidth / 2 ) - 150) / 2);
-    console.log(window.innerWidth);
-    console.log(leftMargin);
+
     topMargin = parseInt((window.innerHeight / 2 ) - 75);
     let leftUnit = leftMargin.toString() + "px";
     let topUnit = topMargin.toString() + "px";
