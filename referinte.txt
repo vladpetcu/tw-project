@@ -10,12 +10,23 @@ https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html
 
 
 User ->
-		Profil - poza/adresa/descriere/etc + feedback primit
-		De interes - anunturi doar cu categoriile din lista de interes
-		Anunturi proprii
+		Home - poza/adresa/descriere/etc
 		
+		Vacantele mele - creaza cautare noua / dezactiveaza cautari active
 		
-		Notificari - primeste notificare cand se posteaza ceva din categoriile de interes
-			+
+		Notificari - primeste notificare cand se potrivesc criteriile pt una din cautarile de vacante ACTIVE.
+		
+
+
+		+
 		search bar
 		
+		
+		
+http://donovanbrown.com/post/How-to-change-the-language-mode-of-a-unsaved-file-in-VS-Code		Pagina profil
+
+
+POZE + USERS
+	lorempixel.com
+	loremipsum.com
+	randomuser.me

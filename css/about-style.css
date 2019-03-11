@@ -1,0 +1,116 @@
+
+body .main-section{
+    padding-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+	background-image:url('../images/mountain4.jpg');
+    display: flex;
+    list-style: none;
+}
+
+.main-section #report-container{
+    background:linear-gradient(to top,rgba(0,0,0,0.8), rgb(47, 79, 79, 0.9));
+    min-height: inherit;
+    height: auto;
+    width: 50%;
+    float: left;
+    margin:0;
+
+}
+.main-section #guide-container{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.8), rgb(47, 79, 79, 0.9));
+    min-height: inherit;
+    height: auto;
+    width: 50%;
+    float: right;
+    margin-left: 100px;
+}
+
+body .main-section #report-container:hover{
+    background: linear-gradient(to top,rgba(0,0,0,0.9), rgb(47, 79, 79, 0.9));
+}
+body .main-section #guide-container:hover{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.9), rgb(47, 79, 79, 0.9));
+}
+
+.main-section #scholary-pic{
+    max-height: 10em;
+    margin-left: -100px;
+    margin-top: 150px;
+    display: flexbox;
+    position: relative;
+}
+
+.main-section #scholary-pic img{
+    max-height: inherit;
+    width: auto;
+    position: absolute;
+}
+
+body .main-section #report-container a{
+    font-size: 4em;
+    font-family: Helvetica, sans-serif;
+    color: antiquewhite;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 200px;
+}
+body .main-section #guide-container a{
+    font-size: 4em;
+    font-family: Helvetica, sans-serif;
+    color: antiquewhite;
+    list-style: none;
+    text-decoration: none;    
+}
+
+body .main-section .skol{
+    display: inline-block;
+    background: rgb(51, 51, 51, 0.8);
+    min-width: 150px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: -3px 5px #999;
+    text-shadow: 2px 1px rgb(47, 79, 79);
+}
+body .main-section .skol:hover{
+    box-shadow: -1px 1px #999;
+    transform: translateY(5px);
+}
+
+
+@media (max-width: 960px) and (min-width: 501px) {
+    .main-section #scholary-pic{
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body .main-section{
+        flex-direction: column;
+    }
+
+    .main-section #report-container{
+        width: 100%;
+        border-bottom: 1px solid antiquewhite;
+    }
+
+    .main-section #guide-container{
+        width: 100%;
+        margin-left: 0;
+        margin-top: -50px;
+    }
+
+    .main-section #scholary-pic{
+        max-height: 10em;
+        margin-left: 25%;
+        margin-top: -50px;
+    }
+    
+    .main-section #scholary-pic img{
+        max-height: inherit;
+        width: auto;
+        position: relative;
+    }
+    
+}

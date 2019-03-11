@@ -1,0 +1,128 @@
+html{
+    font-size: 16px;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+	margin:0 auto;
+    padding:0;   
+	height:100%;
+    overflow:auto;
+}
+*{
+    box-sizing:border-box;
+}
+
+.main-section{
+    min-height: 100vh;
+    display: flex;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+.main-section .menu-sidebar{
+    /* background-color: red; */
+    min-width: 275px;
+    max-width: 325px;
+}
+
+.main-section .content-container{
+    /* background-color: green; */
+    min-width: 60vw;
+    overflow: hidden;
+    padding: 1em;
+}
+
+.menu-sidebar .main-header{
+    background-color: inherit;
+    height: 25em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu-sidebar .main-header nav{
+    height: 15%;
+    margin-top: 5px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: block;   
+}
+
+.main-header nav ul{
+    list-style: none;
+    display: flex;
+    /* width: auto; */
+    margin: 0;
+    padding: 0;
+}
+
+.main-header nav ul li{
+    flex: 1;
+    min-height: 100%;
+    background-color: #333;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-header nav ul li:nth-child(4){
+    margin-right: 0;
+}
+
+.main-header nav ul li a{
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header nav ul li a i{
+    font-size: 2rem;
+    /* transform: translate(-50%, -50%); pt mesaj */
+}
+
+.menu-sidebar .main-header .profile-container{
+    height: 70%;
+    margin:0;
+    padding: 1em;
+    background-color: #333;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu-sidebar .main-header .profile-container img{
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    max-height: 50%;
+    max-width: 60%;
+}
+
+.menu-sidebar .main-header .profile-container h2{
+    color: antiquewhite;
+    margin-top: 1.5em;
+}
+
+.content-container #ad-panorama{
+    min-height: 75px;
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #333;
+    background-image: url('../images/mountain12.jpg');
+}
+
+@media (max-width: 960px) and (min-width: 501px) {
+
+    .main-section .content-container{
+        background-color: yellow;
+    }
+}
