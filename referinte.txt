@@ -14,7 +14,11 @@ User ->
 		
 		Vacantele mele - creaza cautare noua / dezactiveaza cautari active
 		
+<<<<<<< HEAD
 		Notificari - primeste notificare cand se potrivesc criteriile pt una din cautarile de vacante ACTIVE.
+=======
+		Notificari - primeste notificare cand se povesc criteriile pt una din cautarile de vacante ACTIVE.
+>>>>>>> 0eae83dc8d2bab632d33ec7c299830977ffaf487
 		
 
 
