@@ -10,20 +10,14 @@
     background-color: #333;
     padding-top: 0.5em;
     padding: 1em;
-<<<<<<< HEAD
     position: relative;
-=======
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
 }
 
 #new-topic-form .new-topic-inputs{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-<<<<<<< HEAD
     margin-bottom: 2em;
-=======
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
 }
 
 .content-container .new-topic #new-topic-form h3{
@@ -34,11 +28,7 @@
     margin-right: 0.5em;
 }
 
-<<<<<<< HEAD
 hr{
-=======
-.content-container .new-topic #new-topic-form hr{
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
     border: 2px solid white;
 }
 
@@ -52,7 +42,6 @@ hr{
     margin: 0.3em;
     min-width: 20%;
     flex: 1;
-<<<<<<< HEAD
     border-radius: 5px;
 }
 
@@ -75,27 +64,12 @@ hr{
     opacity: 0.9;
     border-radius: 5px;
     margin-left: 0;
-=======
-}
-
-#new-topic-form #add-trip{
-    background: #4dff4d;
-    color:#333;
-	border:none;
-	cursor:pointer;
-	min-width:8%;
-    opacity:0.9;
-    border-radius: 5px;
-    margin-top:1em;
-    margin-left: 90%;
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
 }
 #new-topic-form #add-trip:hover{
 	opacity:1.5;
 	background: #33c433;
 }
 
-<<<<<<< HEAD
 .content-container .topics-container{
 background-color: #333;
     margin: 1em;
@@ -171,9 +145,6 @@ background-color: #333;
 .topics .topic-buttons-div .delete-topic:hover{
     background: #690202;
 }
-=======
-
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
 
 @media screen and (max-width: 960px){
     #new-topic-form .new-topic-inputs input[type=text], 
@@ -191,10 +162,6 @@ background-color: #333;
     }
 
     #new-topic-form #add-trip{
-<<<<<<< HEAD
         margin-left: 80%;
-=======
-        margin-left: 80%
->>>>>>> 1a20c37be730b5a6359126519beb31e316155363
     }
 }
