@@ -47,8 +47,11 @@
     color:#333;
 	border:none;
 	cursor:pointer;
-	width:8%;
-	opacity:0.9;
+	min-width:8%;
+    opacity:0.9;
+    border-radius: 5px;
+    margin-top:1em;
+    margin-left: 90%;
 }
 #new-topic-form #add-trip:hover{
 	opacity:1.5;
@@ -70,5 +73,9 @@
     #new-topic-form .new-topic-inputs input[type=number],
     #new-topic-form .new-topic-inputs input[type=date]{
         min-width: 45%;
+    }
+
+    #new-topic-form #add-trip{
+        margin-left: 80%
     }
 }
