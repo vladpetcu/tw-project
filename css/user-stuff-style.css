@@ -1,0 +1,167 @@
+
+.content-container .new-topic{
+    margin-top: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.content-container .new-topic #new-topic-form{
+    background-color: #333;
+    padding-top: 0.5em;
+    padding: 1em;
+    position: relative;
+}
+
+#new-topic-form .new-topic-inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+
+.content-container .new-topic #new-topic-form h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+hr{
+    border: 2px solid white;
+}
+
+#new-topic-form .new-topic-inputs input[type=text], 
+#new-topic-form .new-topic-inputs input[type=number],
+#new-topic-form .new-topic-inputs input[type=date]
+{
+    /* width: 49%; */
+    /* line-height: 1.5em; */
+    padding: 0.5em;
+    margin: 0.3em;
+    min-width: 20%;
+    flex: 1;
+    border-radius: 5px;
+}
+
+#new-topic-form .add-topic-button-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+#new-topic-form .add-topic-button-div #add-trip{
+    background: #4dff4d;
+    color: #333;
+    font-weight: bold;
+	border: none;
+	cursor: pointer;
+	min-width: 80px;
+    opacity: 0.9;
+    border-radius: 5px;
+    margin-left: 0;
+}
+#new-topic-form #add-trip:hover{
+	opacity:1.5;
+	background: #33c433;
+}
+
+.content-container .topics-container{
+background-color: #333;
+    margin: 1em;
+    padding: 1em;
+}
+
+.topics-container h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.topics-container .my-topics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 50%;
+}
+
+.my-topics .topics{
+    flex: 1;
+    background-color: white;
+    min-width: 48%;
+    /* max-width: 48%; */
+    min-height: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 3px;
+    position: relative;
+}
+
+.topics p{
+    margin-bottom: 3em;
+}
+
+.topic-buttons-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em; 
+}
+
+.topics .topic-buttons-div button{
+    color: white;
+	border: none;
+	cursor: pointer;
+	min-width: 80px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.topics .topic-buttons-div button:hover{
+    opacity: 1.5;
+}
+
+.topics .topic-buttons-div .active-inactive-topic{
+    background: #2f4f4f;
+   
+}
+.topics .topic-buttons-div .active-inactive-topic:hover{
+	background: #162525;
+}
+
+.topics .topic-buttons-div .delete-topic{
+    background: #ff0000;
+}
+.topics .topic-buttons-div .delete-topic:hover{
+    background: #690202;
+}
+
+@media screen and (max-width: 960px){
+    #new-topic-form .new-topic-inputs input[type=text], 
+    #new-topic-form .new-topic-inputs input[type=number],
+    #new-topic-form .new-topic-inputs input[type=date]{
+        min-width: 30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #new-topic-form .new-topic-inputs input[type=text], 
+    #new-topic-form .new-topic-inputs input[type=number],
+    #new-topic-form .new-topic-inputs input[type=date]{
+        min-width: 45%;
+    }
+
+    #new-topic-form #add-trip{
+        margin-left: 80%;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TripInspire</title>
+        <link rel="stylesheet" type="text/css" href="./css/user-index-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/user-stuff-style.css">
+
+    </head>
+    <body>
+        <main class="main-section">
+            <div class="menu-sidebar">
+                <img src="./images/logo1.png" id="logo" alt="">
+                <header class="main-header">
+                    <div class="profile-container">
+                        <img src="./images/default-user.jpg" alt="Avatar">
+                        <h2>User Name</h2>
+
+                    </div>
+                    <nav>
+                        <ul>
+                            <!-- Home - news/top 5 alea din index/news -->
+                            <li>
+                                <a href="user-index.html" title="Home"><i class="fa fa-fw fa-home"></i></a>
+                            </li>
+                            <!-- My stuff - adaug cautare noua/ sterg vechi / eventual modificari -->
+                            <li>
+                                <a href="user-stuff.html" title="My Stuff"><i class="fa fa-fw fa-user"></i></a>
+                            </li>
+                            <!-- Notificari cu bulinuta rosie(+numar) referitoare la cautari active -->
+                            <li>
+                                <a href="user-notifications.html" title="Notifications"><i class="fa fa-fw fa-newspaper-o"></i></a>
+                            </li>
+                            <!-- Buton Log out -->
+                            <li>
+                                <a href="index.html" title="Log Out"><i class="fa fa-fw fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search-container">
+                        <form >
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                </div>
+                </header>
+            </div>
+            <div class="content-container">
+                <div class="new-topic">
+                    <form id="new-topic-form" method="POST" onsubmit="return addNewTopic()">
+                        <h3>Create a new topic</h3>
+                        <hr>
+                        <div class="new-topic-inputs">
+                            <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
+                            <input type="text" id="trip-coming" placeholder="Coming back in" onfocus="(this.type='date')">
+                            <input type="number" id="trip-min-cost" placeholder="Minimum cost &euro;">
+                            <input type="number" id="trip-max-cost" placeholder="Maximum cost &euro;">
+                            <input type="text" id="trip-type" placeholder="Vacation type" list="trip-types">
+                            <input type="number" id="trip-people" placeholder="People number">
+                            <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
+                            <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
+                            <input type="text" id="trip-location" placeholder="Location">
+                            <input type="text" id="trip-description" placeholder="Description/name">
+                        </div>
+                        <div class="add-topic-button-div">
+                            <button type="submit" id="add-trip" title="Add topic">Add Topic</button>
+                        </div>
+                    </form>
+                    <datalist id="trip-types">
+                        <option value="vacation"></option>
+                        <option value="city-break"></option>
+                        <option value="honeymoon"></option>
+                    </datalist>
+                </div>
+                <div class="topics-container">
+                    <h3>My topics</h3>
+                    <hr>
+                    <div class="my-topics">
+                            <span class="topics">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic">Deactivate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div>            
+                            </span>
+                            <span class="topics">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply d
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic">Deactivate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div>
+                            </span>
+                            <span class="topics">
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic">Activate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div> 
+                            </span>
+                            <!-- <span class="topics">4saddasd</span> -->
+                        </div>
+                </div>
+            </div>
+        </main>
+
+
+        <script>
+            function addNewTopic(){
+                let newSpan = document.createElement("span");
+                newSpan.classList.add("topics");
+                // newSpan.innerText = "basdalnfka fk akf akdnf s dnf sd fsdfsdf s";
+                
+                let newParagraph = document.createElement('p');
+                //inner p text aicisa
+                
+                let newDiv = document.createElement('div');
+                let newButton1 = document.createElement('button');
+                let newButton2 = document.createElement('button');
+                newDiv.classList.add("topic-buttons-div");
+                newButton1.classList.add("active-inactive-topic");
+                newButton2.classList.add("delete-topic");
+                
+                newSpan.appendChild(newParagraph);
+                newSpan.appendChild(newDiv);
+                newDiv.appendChild(newButton1);
+                newDiv.appendChild(newButton2);
+
+                var myTopics = document.getElementsByClassName("my-topics")[0];
+                myTopics.appendChild(newSpan);
+
+                // return true;
+            }
+
+            window.onload = addNewTopic;
+        </script>
+
+
+    </body>
+</html>
