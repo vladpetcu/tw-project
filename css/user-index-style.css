@@ -1,7 +1,6 @@
 html{
     font-size: 16px;
     height: 100%;
-    font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -12,20 +11,26 @@ body {
 }
 *{
     box-sizing:border-box;
+    font-family: "Open Sans", sans-serif;
 }
 
 .main-section{
     min-height: 100vh;
+    width: auto;
     display: flex;
     padding-left: 8vw;
     padding-right: 8vw;
     background-color: rgb(0, 0, 0, 0.9);
+    /* background-image:  url('../images/back1.jpg');
+	background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+    background-size:  cover; */
 }
 
 .main-section .menu-sidebar{
-    /* background-color: red; */
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 250px;
+    width: 250px;
 }
 
 .main-section .content-container{
@@ -45,7 +50,7 @@ body {
 
 .menu-sidebar .main-header{
     background-color: inherit;
-    height: 30em;
+    height: auto;
     padding: 1em;
     display: flex;
     flex-direction: column;
@@ -53,7 +58,7 @@ body {
 }
 
 .menu-sidebar .main-header nav{
-    height: 15%;
+    height: 50px;
     margin-top: 5px;
     padding: 0;
     margin-left: 0;
@@ -90,15 +95,15 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
+    transition: all ease-in-out 0.2s;
 }
 
 .main-header nav ul li a i{
     font-size: 2rem;
-    /* transform: translate(-50%, -50%); pt mesaj */
 }
 
 .menu-sidebar .main-header .profile-container{
-    height: 60%;
+    height: auto;
     margin:0;
     padding: 1em;
     background-color: #333;
@@ -191,6 +196,7 @@ body {
 
 .search-container form input{
     min-height: 100%;
+    width: 100%;
     font-size: 16px;
     padding: 1em;
     background-color: #333;
@@ -238,6 +244,7 @@ body {
 
     .main-section .menu-sidebar{
         min-width: 100%;
+        width: auto;
         position: relative;
     }
     
