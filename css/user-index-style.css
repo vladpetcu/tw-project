@@ -6,8 +6,12 @@ html{
 body {
 	margin:0 auto;
     padding:0;   
+<<<<<<< HEAD
     min-height:100%;
     position: relative;
+=======
+	height:100%;
+>>>>>>> 1a20c37be730b5a6359126519beb31e316155363
     overflow:auto;
 }
 *{
@@ -30,13 +34,22 @@ body {
 }
 
 .main-section .menu-sidebar{
+<<<<<<< HEAD
     min-width: 300px;
     width: 300px;
+=======
+    min-width: 250px;
+    width: 250px;
+>>>>>>> 1a20c37be730b5a6359126519beb31e316155363
 }
 
 .main-section .content-container{
     /* background-color: green; */
+<<<<<<< HEAD
     min-width: 50%;
+=======
+    min-width: 60vw;
+>>>>>>> 1a20c37be730b5a6359126519beb31e316155363
     overflow: hidden;
     padding-top: 1em;
 }
