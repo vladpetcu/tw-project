@@ -51,7 +51,7 @@
             <div class="content-container">
                 <div class="new-topic">
                     <form id="new-topic-form" method="POST" onsubmit="return addNewTopic()">
-                        <h3>Create a new topic</h3>
+                        <h3>Find a new trip</h3>
                         <hr>
                         <div class="new-topic-inputs">
                             <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
@@ -76,10 +76,11 @@
                     </datalist>
                 </div>
                 <div class="topics-container">
-                    <h3>My topics</h3>
+                    <h3>My trips</h3>
                     <hr>
                     <div class="my-topics">
                             <span class="topics">
+                                <h4>Trip name/description</h4>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
                                 </p>
@@ -107,7 +108,6 @@
                                     <button class="delete-topic">Delete</button>
                                 </div> 
                             </span>
-                            <!-- <span class="topics">4saddasd</span> -->
                         </div>
                 </div>
             </div>
@@ -116,29 +116,31 @@
 
         <script>
             function addNewTopic(){
+                var myTopics = document.getElementsByClassName("my-topics")[0];
                 let newSpan = document.createElement("span");
-                newSpan.classList.add("topics");
-                // newSpan.innerText = "basdalnfka fk akf akdnf s dnf sd fsdfsdf s";
                 
+                let newH4 = document.createElement('h4');
                 let newParagraph = document.createElement('p');
-                //inner p text aicisa
-                
                 let newDiv = document.createElement('div');
                 let newButton1 = document.createElement('button');
                 let newButton2 = document.createElement('button');
-                newDiv.classList.add("topic-buttons-div");
-                newButton1.classList.add("active-inactive-topic");
-                newButton2.classList.add("delete-topic");
                 
+                newH4.innerText = "Trip name din form"
+                newParagraph.innerText = "Date luate din form";
+                newButton1.innerText = "Deactivate";
+                newButton2.innerText = "Delete";
+                
+                newSpan.appendChild(newH4);
                 newSpan.appendChild(newParagraph);
                 newSpan.appendChild(newDiv);
                 newDiv.appendChild(newButton1);
                 newDiv.appendChild(newButton2);
-
-                var myTopics = document.getElementsByClassName("my-topics")[0];
                 myTopics.appendChild(newSpan);
-
-                // return true;
+                
+                newSpan.classList.add("topics");
+                newDiv.classList.add("topic-buttons-div");
+                newButton1.classList.add("active-inactive-topic");
+                newButton2.classList.add("delete-topic");
             }
 
             window.onload = addNewTopic;
