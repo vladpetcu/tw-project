@@ -54,10 +54,14 @@ function playWithTrips(event){
     }
 
     if(document.getElementsByClassName("topics").length == 0){
+<<<<<<< HEAD
         var pinguin = document.getElementById("no-topics-displayed");
         if(window.getComputedStyle(pinguin).getPropertyValue("display") == "none"){
             pinguin.style.display = "flex";
         }
+=======
+        console.log("gol");
+>>>>>>> 16cb29aa72cf0357d6b09a900e8cc7a77919e5db
     }
 }
 

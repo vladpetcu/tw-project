@@ -40,12 +40,15 @@ function addNewTrip(event){
         newDiv.classList.add("topic-buttons-div");
         newButton1.classList.add("active-inactive-topic");
         newButton2.classList.add("delete-topic");
+<<<<<<< HEAD
 
         var pinguin = document.getElementById("no-topics-displayed");
         if(window.getComputedStyle(pinguin).getPropertyValue("display") == "flex"){
             pinguin.style.display = "none";
         }
 
+=======
+>>>>>>> 16cb29aa72cf0357d6b09a900e8cc7a77919e5db
         //scrie datele si in BD + porneste cautarea
         
         event.preventDefault();
