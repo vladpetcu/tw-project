@@ -1,4 +1,4 @@
-function addNewTopic(){
+function addNewTrip(){
     var myTopics = document.getElementsByClassName("my-topics")[0];
     let newSpan = document.createElement("span");
     
@@ -30,6 +30,10 @@ function addNewTopic(){
     newDiv.classList.add("topic-buttons-div");
     newButton1.classList.add("active-inactive-topic");
     newButton2.classList.add("delete-topic");
+
+    console.log("end of function");
 }
 
-window.onload = addNewTopic;
+var form = document.getElementById("new-topic-form");
+form.addEventListener('submit', addNewTrip);
+//window.onload = addNewTrip;

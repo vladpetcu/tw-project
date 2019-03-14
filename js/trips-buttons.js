@@ -10,10 +10,7 @@ function playWithTrips(event){
                 break;
             }
         }
-
-        alert("Trip nr: " + index + " on/off button");
-
-        var targetTrip = document.getElementsByClassName("topics")[index];
+        var targetTrip = document.getElementsByClassName("topics")[index]; 
         
         if(clickedButton.value == "on"){
             //de oprit serverul din cautat  
@@ -48,14 +45,12 @@ function playWithTrips(event){
         }
 
         var targetTrip = document.getElementsByClassName("topics")[index];
+        if( confirm("Are you sure you want to delete this trip?") == true ){
+            //de oprit cautarea + mesaj de confirmare??
 
-       // alert("Trip nr: " + index + " delete button");
+            tripsList.removeChild(targetTrip);
+        }
 
-        //de oprit cautarea + mesaj de confirmare??
-
-
-
-        tripsList.removeChild(targetTrip);
     }
 
     if(document.getElementsByClassName("topics").length == 0){

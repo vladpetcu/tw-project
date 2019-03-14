@@ -43,6 +43,7 @@ hr{
     min-width: 20%;
     flex: 1;
     border-radius: 5px;
+    outline: none;
 }
 
 #new-topic-form .add-topic-button-div{
@@ -104,7 +105,6 @@ background-color: #333;
     position: relative;
 }
 
-<<<<<<< HEAD
 .inactive-topics{
     opacity:0.7;
 }
@@ -146,45 +146,6 @@ background-color: #333;
 	background: #162525;
 }
 
-=======
-.topics h4{
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.topics p{
-    margin-bottom: 3em;
-}
-
-.topic-buttons-div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-right: 1.5em;
-    padding-bottom: 0.5em; 
-    display: flex;
-}
-
-.topics .topic-buttons-div button{
-    color: white;
-	border: none;
-	cursor: pointer;
-	min-width: 80px;
-    opacity: 0.9;
-    border-radius: 5px;
-    outline: none;
-    margin-left: 6px;
-}
-
-.topics .topic-buttons-div .active-inactive-topic{
-    background: #2f4f4f;
-   
-}
-.topics .topic-buttons-div .active-inactive-topic:hover{
-	background: #162525;
-}
-
->>>>>>> 7e567f86d6b5e4f7716fe366ddc37e17022c4ea6
 .topics .topic-buttons-div .delete-topic{
     background: #ff0000;
 }
