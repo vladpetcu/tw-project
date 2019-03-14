@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>TripInspire</title>
+			<link rel="stylesheet" type="text/css" href="./css/index-style.css">
+			<link rel="stylesheet" type="text/css" href="./css/myaccount-style.css">
+	
+	</head>
+	
+	<body>
+		<header id="index-header">
+			<div class="menu-button-container" >
+				<button class="m-button" id="mbut" style="vertical-align:middle"><span>Menu</span></button>
+				<div class="m-img"><img src="./images/logo1.png" alt=""></div>
+			</div>
+			<div class="menu-container" id="div-menu">
+				<nav>
+					<ul class="ul-navmenu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="myaccount.html">Account</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>				
+				</nav>
+			</div>	
+			<div id="logo-div">
+					<a class="logo" href="./index.html"><img src="./images/logo2.png" alt="Avatar"></a>
+			</div>
+		</header>
+		
+		<main class="main-section">
+			<div id="wizard">
+				<h2><span>🧙‍ You shall not pass without logging in!</span></h2>
+			</div>
+			<div class="forms-container">
+				<div id="log-form" style="display:block">
+					<form id="form-login" method="post" >
+						<h1>Log In Now</h1>
+						<hr>
+						<label><b>Username</b></label>
+						<input type="text" id="nume-login" name="uid" placeholder="Enter username or email">
+						
+						<label ><b>Password</b></label>
+						<input type="password" id="pwd-login" name="pwd" placeholder="Enter password">
+						
+						<label id="rememberme">
+							<input type="checkbox" checked="checked" name="remember">
+							<b>Remember me</b>
+						</label>
+
+						<div class="clearfix">
+							<button type="button" class="to-signup">Go to Sign Up</button>
+							<button type="button" class="login-button">Log In</button>
+						</div>
+					</form>
+				</div>
+				<div id="sign-form" style="display:none">
+					<form id="form-signup" method="post" >
+						<h1>Sign Up Now</h1>
+						<hr>
+						<label ><b>Username</b></label>
+						<input type="text" id="nume-sign" name="uid" placeholder="Enter username">
+						
+						<label ><b>Email</b></label>
+						<input type="text" id="mail-sign" name="mail" placeholder="Enter email">
+						
+						<label ><b>Password</b></label>
+						<input type="password" id="pwd-sign" name="pwd" placeholder="Enter password">
+						
+						<label ><b>Repeat Password</b></label>
+						<input type="password" id="pwd-sign-repeat" name="pwd-repeat" placeholder="Enter password again">
+
+						<label id="terms-cond">
+							<input type="checkbox" checked="checked" name="terms">
+							Sunt de acord cu <a href="">Termenii si conditiile</a> AdPost privind confidentialitatea si 
+								prelucrarea datelor cu caracter personal.
+						</label>
+
+						<div class="clearfix">
+							<button type="button" class="to-login">Go to Log In</button>
+							<button type="button" class="signup-button">Sign Up</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<p>TripInspire - Web Application - Copyright & copy 2019</p>
+		</footer>
+		
+		<script src="./js/forms-switch.js"></script>
+		<script src="./js/menu-button.js"></script>
+	</body>
+</html>

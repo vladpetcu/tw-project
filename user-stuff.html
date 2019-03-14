@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TripInspire</title>
+        <link rel="stylesheet" type="text/css" href="./css/user-index-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./css/user-stuff-style.css">
+
+    </head>
+    <body>
+        <div id="top-line"></div>
+        <main class="main-section">
+            <div class="menu-sidebar">
+                <img src="./images/logo1.png" id="logo" alt="">
+                <header class="main-header">
+                    <div class="profile-container">
+                        <img src="./images/default-user.jpg" alt="Avatar">
+                        <h2>User Name</h2>
+
+                    </div>
+                    <nav>
+                        <ul>
+                            <!-- Home - news/top 5 alea din index/news -->
+                            <li>
+                                <a href="user-index.html" title="Home"><i class="fa fa-fw fa-home"></i></a>
+                            </li>
+                            <!-- My stuff - adaug cautare noua/ sterg vechi / eventual modificari -->
+                            <li>
+                                <a href="user-stuff.html" title="My Stuff"><i class="fa fa-fw fa-user"></i></a>
+                            </li>
+                            <!-- Notificari cu bulinuta rosie(+numar) referitoare la cautari active -->
+                            <li>
+                                <a href="user-notifications.html" title="Notifications"><i class="fa fa-fw fa-newspaper-o"></i></a>
+                            </li>
+                            <!-- Buton Log out -->
+                            <li>
+                                <a href="index.html" title="Log Out"><i class="fa fa-fw fa-sign-out"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search-container">
+                        <form >
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                </div>
+                </header>
+            </div>
+            <div class="content-container">
+                <div class="new-topic">
+                    <form id="new-topic-form" method="POST">
+                        <h3>Find a new trip</h3>
+                        <hr>
+                        <div class="new-topic-inputs">
+                            <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
+                            <input type="text" id="trip-coming" placeholder="Coming back in" onfocus="(this.type='date')">
+                            <input type="number" id="trip-min-cost" placeholder="Minimum cost &euro;">
+                            <input type="number" id="trip-max-cost" placeholder="Maximum cost &euro;">
+                            <input type="text" id="trip-type" placeholder="Vacation type" list="trip-types">
+                            <input type="number" id="trip-people" placeholder="People number">
+                            <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
+                            <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
+                            <input type="text" id="trip-destination" placeholder="Destination">
+                            <input type="text" id="trip-description" placeholder="Description/name">
+                        </div>
+                        <div class="add-topic-button-div">
+                            <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
+                        </div>
+                    </form>
+                    <datalist id="trip-types">
+                        <option value="vacation"></option>
+                        <option value="city-break"></option>
+                        <option value="honeymoon"></option>
+                    </datalist>
+                </div>
+                <div class="topics-container">
+                    <h3>My trips</h3>
+                    <hr>
+                    <div class="my-topics">
+                        <!-- span-uri cu cautari aici -->
+                        <div id="no-topics-displayed">
+                            <p>You have no trips.<br>In order to have one, complete the form above.</p>
+                            <div id="gif-container">
+                                <img src="./images/pinguin.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div id="bottom-line"></div>
+        
+        <script src="./js/trips-buttons.js"></script>
+        <script src="./js/add-trip.js"></script>
+    </body>
+</html>
