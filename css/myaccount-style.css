@@ -1,7 +1,6 @@
 
 body .main-section{
 	font-family:sans-serif;
-	background-image:url('../images/mountain2.jpg');
 }
 
 #wizard{
@@ -11,7 +10,7 @@ body .main-section{
 	margin-bottom:3em;
 	max-width: 45em;
 	text-align: center;
-	color:black;
+	color:rgb(25, 25, 25);
 	font-weight: bold;
 	font-size: 15px;
 }
@@ -65,7 +64,7 @@ button{
 	font-size:1.6em;
 }
 button:hover{
-	opacity:1.5;
+	opacity:1;
 	background:#65a5a5;
 }
 

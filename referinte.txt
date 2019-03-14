@@ -2,31 +2,41 @@ Obligatoriu Ajax
 Fara frameworkuri
 Fara jquery
 
-
-https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html
-
-
-
-
-
 User ->
 		Home - poza/adresa/descriere/etc
 		
 		Vacantele mele - creaza cautare noua / dezactiveaza cautari active
 		
 		Notificari - primeste notificare cand se potrivesc criteriile pt una din cautarile de vacante ACTIVE.
-		
-
 
 		+
 		search bar
 		
 		
+https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html
 		
 http://donovanbrown.com/post/How-to-change-the-language-mode-of-a-unsaved-file-in-VS-Code		Pagina profil
-
 
 POZE + USERS
 	lorempixel.com
 	loremipsum.com
 	randomuser.me
+	
+De facut:
+	- pop-up pt meniu + numar notificari + All/Read la notificari + pop-up la form cand dai submit (daca nu ai input corect)
+	
+	
+Intrebari!!!!!!!
+		avem voie cu node.js/ fetch?
+		la ce interval de timp caut bilete/ fac api request? doar bilete? doar de avion? / croaziera/tren/buz?
+		nu crapa serverul pt 1 mil. useri daca fac stochez/ updatez BD?
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

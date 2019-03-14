@@ -10,12 +10,14 @@
     background-color: #333;
     padding-top: 0.5em;
     padding: 1em;
+    position: relative;
 }
 
 #new-topic-form .new-topic-inputs{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 2em;
 }
 
 .content-container .new-topic #new-topic-form h3{
@@ -26,7 +28,7 @@
     margin-right: 0.5em;
 }
 
-.content-container .new-topic #new-topic-form hr{
+hr{
     border: 2px solid white;
 }
 
@@ -40,25 +42,115 @@
     margin: 0.3em;
     min-width: 20%;
     flex: 1;
+    border-radius: 5px;
 }
 
-#new-topic-form #add-trip{
+#new-topic-form .add-topic-button-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-left: 0;
+    padding-right: 1.5em;
+    padding-bottom: 1em;
+}
+
+#new-topic-form .add-topic-button-div #add-trip{
     background: #4dff4d;
-    color:#333;
-	border:none;
-	cursor:pointer;
-	min-width:8%;
-    opacity:0.9;
+    color: #333;
+    font-weight: bold;
+	border: none;
+	cursor: pointer;
+	min-width: 80px;
+    opacity: 0.9;
     border-radius: 5px;
-    margin-top:1em;
-    margin-left: 90%;
+    margin-left: 0;
 }
 #new-topic-form #add-trip:hover{
-	opacity:1.5;
 	background: #33c433;
 }
 
+.content-container .topics-container{
+background-color: #333;
+    margin: 1em;
+    padding: 1em;
+}
 
+.topics-container h3{
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.topics-container .my-topics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-topics .topics{
+    flex: 1;
+    background-color: white;
+    min-width: 48%;
+    /* max-width: 48%; */
+    min-height: 100%;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 3px;
+    position: relative;
+}
+
+.inactive-topics{
+    opacity:0.7;
+}
+
+.topics h4{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.topics p{
+    margin-bottom: 3em;
+}
+
+.topic-buttons-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 1.5em;
+    padding-bottom: 0.5em; 
+    display: flex;
+}
+
+.topics .topic-buttons-div button{
+    color: white;
+	border: none;
+	cursor: pointer;
+	min-width: 80px;
+    opacity: 0.9;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 6px;
+}
+
+.topics .topic-buttons-div .active-inactive-topic{
+    background: #2f4f4f;
+   
+}
+.topics .topic-buttons-div .active-inactive-topic:hover{
+	background: #162525;
+}
+
+.topics .topic-buttons-div .delete-topic{
+    background: #ff0000;
+}
+.topics .topic-buttons-div .delete-topic:hover{
+    background: #690202;
+}
 
 @media screen and (max-width: 960px){
     #new-topic-form .new-topic-inputs input[type=text], 
@@ -76,6 +168,6 @@
     }
 
     #new-topic-form #add-trip{
-        margin-left: 80%
+        margin-left: 80%;
     }
 }

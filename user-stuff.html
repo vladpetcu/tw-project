@@ -50,8 +50,8 @@
             </div>
             <div class="content-container">
                 <div class="new-topic">
-                    <form id="new-topic-form" method="POST">
-                        <h3>Creeaza o cautare de vacante noua</h3>
+                    <form id="new-topic-form" method="POST" onsubmit="return addNewTopic()">
+                        <h3>Find a new trip</h3>
                         <hr>
                         <div class="new-topic-inputs">
                             <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
@@ -62,10 +62,12 @@
                             <input type="number" id="trip-people" placeholder="People number">
                             <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
                             <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
-                            <input type="text" id="trip-location" placeholder="Location">
+                            <input type="text" id="trip-destination" placeholder="Destination">
                             <input type="text" id="trip-description" placeholder="Description/name">
                         </div>
-                        <button type="submit" id="add-trip">Add</button>
+                        <div class="add-topic-button-div">
+                            <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
+                        </div>
                     </form>
                     <datalist id="trip-types">
                         <option value="vacation"></option>
@@ -73,12 +75,47 @@
                         <option value="honeymoon"></option>
                     </datalist>
                 </div>
-                <ul class="my-topics">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="topics-container">
+                    <h3>My trips</h3>
+                    <hr>
+                    <div class="my-topics">
+                            <span class="topics">
+                                <h4>Trip name/description</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic" value="on">Deactivate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div>            
+                            </span>
+                            <span class="topics">
+                                <h4>Trip name/description</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply d
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic" value="on">Deactivate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div>
+                            </span>
+                            <span class="topics">
+                                <h4>Trip name/description</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                </p>
+                                <div class="topic-buttons-div">
+                                    <button class="active-inactive-topic" value="on">Deactivate</button>
+                                    <button class="delete-topic">Delete</button>
+                                </div> 
+                            </span>
+                        </div>
+                </div>
             </div>
         </main>
+
+        <script src="./js/trips-buttons.js"></script>
+        <script src="./js/add-trip.js"></script>
     </body>
 </html>
