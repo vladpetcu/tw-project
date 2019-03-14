@@ -30,7 +30,7 @@ Intrebari!!!!!!!
 		avem voie cu node.js/ fetch?
 		la ce interval de timp caut bilete/ fac api request? doar bilete? doar de avion? / croaziera/tren/buz?
 		nu crapa serverul pt 1 mil. useri daca fac stochez/ updatez BD?
-		
+		form submit din user-stuff... afisare de date/ trip in pagina mai intai sau scris in baza de date, pornit cautarea?
 		
 		
 		

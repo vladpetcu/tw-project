@@ -15,15 +15,21 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+#top-line, #bottom-line{
+    height: 5vh;
+    width: 100%;
+    background-color: #333;
+}
+
 .main-section{
-    min-height: 100vh;
+    min-height: 90vh;
     width: auto;
     display: flex;
     padding-left: 8vw;
     padding-right: 8vw;
     background-color: rgba(3, 15, 3, 0.9);
     background-image:  url('../images/back2.jpg');
-	background-position: center center;
+	background-position: center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
     background-size:  cover;

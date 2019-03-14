@@ -109,7 +109,7 @@ body .main-section{
 	padding-right: 10%;
 	padding-left: 10%;
 	background-image:url('../images/back0.jpg');
-	background-position: center center;
+	background-position: center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
 	background-size:  cover;
@@ -137,6 +137,8 @@ body .main-section{
 	font-family: Verdana, sans-serif;
 	font-size:3em;
 	color:white;
+	margin-bottom: 0;
+	padding-bottom: 1em;
 }
 
 .frequent-questions{

@@ -16,6 +16,8 @@ body .main-section{
 	font-size:1.7em;
 	text-decoration: none;
 	color:white;
+	margin-bottom: 0;
+	padding-bottom: 1em;
 	padding-top:0.5em;
 	padding-left: 1em; 
 	text-align: center;
