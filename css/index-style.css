@@ -1,10 +1,18 @@
 
 html, body {
+<<<<<<< HEAD
 	font-size: 10px;
 	margin: 0 auto;
 	padding: 0;
 	min-height: 100%;
 	overflow: auto;
+=======
+	font-size:10px;
+	margin:0 auto;
+	padding:0;
+	min-height:100%;
+	overflow:auto;
+>>>>>>> 7e567f86d6b5e4f7716fe366ddc37e17022c4ea6
 }
 *{
 	box-sizing:border-box;
