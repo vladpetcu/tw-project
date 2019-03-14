@@ -43,6 +43,7 @@ hr{
     min-width: 20%;
     flex: 1;
     border-radius: 5px;
+    outline: none;
 }
 
 #new-topic-form .add-topic-button-div{
@@ -64,6 +65,7 @@ hr{
     opacity: 0.9;
     border-radius: 5px;
     margin-left: 0;
+    outline: none;
 }
 #new-topic-form #add-trip:hover{
 	background: #33c433;
@@ -87,6 +89,7 @@ background-color: #333;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    min-height: 143px;
 }
 
 .my-topics .topics{
@@ -102,6 +105,10 @@ background-color: #333;
     padding: 0.5em;
     border-radius: 3px;
     position: relative;
+}
+
+.inactive-topics{
+    opacity:0.7;
 }
 
 .topics h4{
@@ -146,6 +153,38 @@ background-color: #333;
 }
 .topics .topic-buttons-div .delete-topic:hover{
     background: #690202;
+}
+
+.my-topics #no-topics-displayed{
+    background-color: #E1E8F0;
+    width: 100%;
+    padding: 1em;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+#no-topics-displayed p{
+    flex: 2;
+    margin-bottom: 0;
+}
+#no-topics-displayed #gif-container{
+    max-height: 80px;
+    flex: 1;
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#gif-container img{
+    height: 100%;
+    max-height: 80px;
+    max-width: 67px;
+    align-self: flex-end;
 }
 
 @media screen and (max-width: 960px){

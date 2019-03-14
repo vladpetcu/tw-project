@@ -11,6 +11,7 @@
 
     </head>
     <body>
+        <div id="top-line"></div>
         <main class="main-section">
             <div class="menu-sidebar">
                 <img src="./images/logo1.png" id="logo" alt="">
@@ -50,7 +51,7 @@
             </div>
             <div class="content-container">
                 <div class="new-topic">
-                    <form id="new-topic-form" method="POST" onsubmit="return addNewTopic()">
+                    <form id="new-topic-form" method="POST">
                         <h3>Find a new trip</h3>
                         <hr>
                         <div class="new-topic-inputs">
@@ -62,11 +63,11 @@
                             <input type="number" id="trip-people" placeholder="People number">
                             <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
                             <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
-                            <input type="text" id="trip-location" placeholder="Location">
+                            <input type="text" id="trip-destination" placeholder="Destination">
                             <input type="text" id="trip-description" placeholder="Description/name">
                         </div>
                         <div class="add-topic-button-div">
-                            <button type="submit" id="add-trip" title="Add topic">Add Topic</button>
+                            <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
                         </div>
                     </form>
                     <datalist id="trip-types">
@@ -79,73 +80,20 @@
                     <h3>My trips</h3>
                     <hr>
                     <div class="my-topics">
-                            <span class="topics">
-                                <h4>Trip name/description</h4>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                </p>
-                                <div class="topic-buttons-div">
-                                    <button class="active-inactive-topic">Deactivate</button>
-                                    <button class="delete-topic">Delete</button>
-                                </div>            
-                            </span>
-                            <span class="topics">
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply d
-                                </p>
-                                <div class="topic-buttons-div">
-                                    <button class="active-inactive-topic">Deactivate</button>
-                                    <button class="delete-topic">Delete</button>
-                                </div>
-                            </span>
-                            <span class="topics">
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                </p>
-                                <div class="topic-buttons-div">
-                                    <button class="active-inactive-topic">Activate</button>
-                                    <button class="delete-topic">Delete</button>
-                                </div> 
-                            </span>
+                        <!-- span-uri cu cautari aici -->
+                        <div id="no-topics-displayed">
+                            <p>You have no trips.<br>In order to have one, complete the form above.</p>
+                            <div id="gif-container">
+                                <img src="./images/pinguin.gif" alt="">
+                            </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </main>
-
-
-        <script>
-            function addNewTopic(){
-                var myTopics = document.getElementsByClassName("my-topics")[0];
-                let newSpan = document.createElement("span");
-                
-                let newH4 = document.createElement('h4');
-                let newParagraph = document.createElement('p');
-                let newDiv = document.createElement('div');
-                let newButton1 = document.createElement('button');
-                let newButton2 = document.createElement('button');
-                
-                newH4.innerText = "Trip name din form"
-                newParagraph.innerText = "Date luate din form";
-                newButton1.innerText = "Deactivate";
-                newButton2.innerText = "Delete";
-                
-                newSpan.appendChild(newH4);
-                newSpan.appendChild(newParagraph);
-                newSpan.appendChild(newDiv);
-                newDiv.appendChild(newButton1);
-                newDiv.appendChild(newButton2);
-                myTopics.appendChild(newSpan);
-                
-                newSpan.classList.add("topics");
-                newDiv.classList.add("topic-buttons-div");
-                newButton1.classList.add("active-inactive-topic");
-                newButton2.classList.add("delete-topic");
-            }
-
-            window.onload = addNewTopic;
-        </script>
-
-
+        <div id="bottom-line"></div>
+        
+        <script src="./js/trips-buttons.js"></script>
+        <script src="./js/add-trip.js"></script>
     </body>
 </html>
