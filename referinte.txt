@@ -14,7 +14,6 @@ User ->
 		
 		
 https://www.awwwards.com/build-a-simple-javascript-app-the-mvc-way.html
-<<<<<<< HEAD
 		
 http://donovanbrown.com/post/How-to-change-the-language-mode-of-a-unsaved-file-in-VS-Code		Pagina profil
 
@@ -36,23 +35,3 @@ Intrebari!!!!!!!
 		
 		
 !!!!!!LOCATIA E SUGERATA, NU DATA CA INPUT
-=======
-		
-http://donovanbrown.com/post/How-to-change-the-language-mode-of-a-unsaved-file-in-VS-Code		Pagina profil
-
-POZE + USERS
-	lorempixel.com
-	loremipsum.com
-	randomuser.me
-	
-Ramas de facut:
-	- popup-uri pt meniu + numar notificari + All/Read la notificari 
-	
-	
-Intrebari!!!!!!!
-		avem voie cu node.js/ fetch?
-		la ce interval de timp caut bilete/ fac api request? doar bilete? doar de avion? / croaziera/tren/buz?
-		nu crapa serverul pt 1 mil. useri daca fac stochez/ updatez BD?
-		la form submit din user-stuff... afisare de date/ trip in pagina mai intai sau scris in baza de date, pornit cautarea?
-		folosim google api pt locatie/ o trecem in sign-up form / o modificam? daca o modificam din cont, cum o validam?
->>>>>>> fb0a76288a98b5ff59bb618696aef95a8c555677
