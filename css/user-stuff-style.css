@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
 }
 
 .content-container .new-topic #new-topic-form h3{
@@ -53,6 +53,8 @@ hr{
     padding-left: 0;
     padding-right: 1.5em;
     padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
 #new-topic-form .add-topic-button-div #add-trip{
@@ -61,7 +63,8 @@ hr{
     font-weight: bold;
 	border: none;
 	cursor: pointer;
-	min-width: 80px;
+    min-width: 80px;
+    min-height: 30px;
     opacity: 0.9;
     border-radius: 5px;
     margin-left: 0;
@@ -70,6 +73,20 @@ hr{
 #new-topic-form #add-trip:hover{
 	background: #33c433;
 }
+
+.add-topic-button-div img{
+    max-height: 30px;
+    margin-right: 0.5em; 
+}
+
+.add-topic-button-div #verified{
+    display: none;
+}
+.add-topic-button-div #wrong{
+    display: none;
+}
+
+
 
 .content-container .topics-container{
 background-color: #333;

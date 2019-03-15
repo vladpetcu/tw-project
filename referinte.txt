@@ -22,21 +22,13 @@ POZE + USERS
 	loremipsum.com
 	randomuser.me
 	
-De facut:
-	- pop-up pt meniu + numar notificari + All/Read la notificari + pop-up la form cand dai submit (daca nu ai input corect)
+Ramas de facut:
+	- popup-uri pt meniu + numar notificari + All/Read la notificari 
 	
 	
 Intrebari!!!!!!!
 		avem voie cu node.js/ fetch?
 		la ce interval de timp caut bilete/ fac api request? doar bilete? doar de avion? / croaziera/tren/buz?
 		nu crapa serverul pt 1 mil. useri daca fac stochez/ updatez BD?
-		form submit din user-stuff... afisare de date/ trip in pagina mai intai sau scris in baza de date, pornit cautarea?
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		la form submit din user-stuff... afisare de date/ trip in pagina mai intai sau scris in baza de date, pornit cautarea?
+		folosim google api pt locatie/ o trecem in sign-up form / o modificam? daca o modificam din cont, cum o validam?

@@ -1,7 +1,26 @@
 
-function validateTripForm(){
+async function showValidationAnswer(status){
+    var imgGreen = document.getElementById("verified");
+    var imgRed = document.getElementById("wrong");
 
-    return true;
+    if( status == true){
+        imgGreen.style.display = "block";
+        setTimeout( function(){ imgGreen.style.display = "none"; }, 1500);
+    }
+    else if( status == false){
+        imgRed.style.display = "block";
+        setTimeout(function(){ imgRed.style.display = "none";}, 1500);
+    }
+
+}
+
+function validateTripForm(){
+    //verificare inputuri
+    
+    
+    let ok = true;
+    showValidationAnswer(ok);
+    return ok;
 }
 
 function addNewTrip(event){

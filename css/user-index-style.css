@@ -42,7 +42,7 @@ body {
 
 .main-section .content-container{
     /* background-color: green; */
-    min-width: 50%;
+    min-width: calc(84vw - 300px);
     overflow: hidden;
     padding-top: 3em;
     padding-bottom: 2.5em;
