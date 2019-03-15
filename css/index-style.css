@@ -1,18 +1,23 @@
 
 html, body {
-	font-size:10px;
-	margin:0 auto;
-	padding:0;
-	height:100%;
-	overflow:auto;
+	font-size: 10px;
+	margin: 0 auto;
+	padding: 0;
+	min-height: 100%;
 }
 *{
 	box-sizing:border-box;
 }
+
+body{
+	position: relative;
+}
+
 header, main, footer{
 	margin:0;
 	padding:0.1px;
 }
+
 header{
 	background:#dcdcdc;
 	min-height: 10em;
@@ -46,7 +51,7 @@ li a {
 #logo-div{
 	margin-top:-2.5%;
 	position:relative;
-	margin-left:85%;
+	margin-left:85vw;
 }
 
 .logo img{
@@ -54,6 +59,7 @@ li a {
 	z-index:100;
 	max-height:8em;
 	min-width:7em;
+	border: 2px solid antiquewhite;
 	border-radius:50%;
 	background:black;
 }
@@ -69,16 +75,17 @@ body header .menu-button-container{
 
 body header .menu-button-container .m-button {
   display: inline-block;
+	min-width: 45vw;
+	max-width: 180px;
+	margin: 0.3em;
+	padding: 1em;
+  font-size: 2em;
+  text-align: center;
   border-radius: 0.5em;
   background-color: #2f4f4f;
   border: none;
   color: #ffffff;
-  text-align: center;
-  font-size: 2em;
-  padding: 1em;
-  width: 180px;
-  cursor: pointer;
-	margin: 0.3em;
+	cursor: pointer;
 }
 
 body header .menu-button-container .m-button:focus{
@@ -88,44 +95,35 @@ body header .menu-button-container .m-button:focus{
 body header .menu-button-container .m-button span {
   cursor: pointer;
   display: inline-block;
-  position: relative;
 }
 
 body header .menu-button-container .m-button span:after {
-  position: absolute;
   opacity: 0;
   top: 0;
-  right: -20px;
   transition: 0.5s;
 }
 
-body header .menu-button-container .m-button:hover span {
-  padding-right: 2.5px;
-}
-
-body header .menu-button-container .m-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 body .main-section{
+	min-height:100vh;
+	width: auto;
 	padding-right: 10%;
 	padding-left: 10%;
-	background-image:url('../images/mountain1.jpg');
-	background-position: center center;
+	background-image:url('../images/back0.jpg');
+	background-position: center;
 	background-repeat:  no-repeat;
 	background-attachment: fixed;
 	background-size:  cover;
-	background-color: #999;
-	min-height:76vh;
+	background-color: rgba(3, 15, 3, 0.9);;
 }
 
 .main-section .motto{
 	margin-top:4em;
+	margin-bottom: 0;
+	padding-bottom: 0;
 	padding-left:2em;
 	padding-right:2em;
-	opacity:0.9;
-	background:rgba(0,0,0,0.6);
+	opacity:0.7;
+	background:rgba(0,0,0,0.9);
 	height:100%;
 }
 .motto h1{
@@ -139,16 +137,19 @@ body .main-section{
 	font-family: Verdana, sans-serif;
 	font-size:3em;
 	color:white;
+	margin-bottom: 0;
+	padding-bottom: 1em;
 }
 
 .frequent-questions{
 	margin-bottom:4em;
+	margin-top:0;
 	padding-top:1em;
 	padding-left:2em;	
 	padding-right:2em;
 	padding-bottom:1em;
-	opacity:0.9;
-	background:rgba(255,255,255,1);
+	background:#333;
+	/* opacity:0.9; */
 	height:100%;
 	display:grid;
 	grid-gap:1em;
@@ -160,8 +161,9 @@ body .main-section{
 	border:#333 2px solid;
 	margin-top:0;
 	padding:0 0.4em 0.2em 0.4em;
-	border-radius:0.3em;
+	border-radius:6px;
 	line-height:1.5em;
+	background-color: white;
 }
 .frequent-questions div img{
 	max-height:4em;
@@ -184,13 +186,15 @@ body .main-section{
 }
 
 footer{
+	height:5.1em;
+	width: auto;
+	padding-top:0.5em;
 	bottom:0;
+	left:0;
 	background-color:#333;
 	color:white;
-	min-height:5.1em;
 	font-size:1.4em;
 	text-align:center;
-	padding-top:0.5em;
 }
 
 @media (max-width: 960px) and (min-width: 501px) {
@@ -234,14 +238,35 @@ footer{
 		min-width:4em;
 		display: none;
 	}
+
 	header{
 		background:#333;
-		min-height:17em;
+		min-height:80px;
+		height: 80px;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 2;
 	}
+	
+	body header .menu-container{
+		display: none;
+	}
+	
 	header div{
 		display:block;
 		float:none;
 	}
+
+	header .menu-container{
+		position: relative;
+		z-index: 2;
+	}
+
+	.top-minus{
+		margin-top: -170px;
+	}
+
 	.frequent-questions{
 		grid-template-columns: repeat(auto-fill, minmax(98%, 1fr));
 	}
@@ -251,25 +276,25 @@ footer{
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
 	}
-	body header .menu-button-container .m-img{
-		
-		margin-top: 0.8em;
+	body header .menu-button-container .m-img{	
+		margin-top: 0.6em;
 		margin-bottom: 0.3em;
 		margin-right: 1em; 
 	}
 	
 	body header .menu-button-container .m-img img{
-		max-height: 80px;
-		max-width: 70px;
+		max-height: 6.3em;
+		min-height: 6.3em;
+		max-width: 40vw;
 		float: right;
 	}
+}
 
-	body header{
-		min-height: 80px;
-		height: 80px;
-	}
-
-	body header .menu-container{
+@media screen and (max-width: 250px){
+	body header .menu-button-container .m-img{
 		display: none;
+	}
+	body header .menu-button-container .m-button{
+		min-width: 88vw;
 	}
 }

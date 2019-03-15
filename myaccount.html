@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<meta charset="utf-8">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-	<title>OLX</title>
-		<link rel="stylesheet" type="text/css" href="./css/index-style.css">
-		<link rel="stylesheet" type="text/css" href="./css/myaccount-style.css">
-		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>TripInspire</title>
+			<link rel="stylesheet" type="text/css" href="./css/index-style.css">
+			<link rel="stylesheet" type="text/css" href="./css/myaccount-style.css">
 	
 	</head>
 	
@@ -14,7 +14,7 @@
 		<header id="index-header">
 			<div class="menu-button-container" >
 				<button class="m-button" id="mbut" style="vertical-align:middle"><span>Menu</span></button>
-				<div class="m-img"><img src="./images/logo2.png" alt=""></div>
+				<div class="m-img"><img src="./images/logo1.png" alt=""></div>
 			</div>
 			<div class="menu-container" id="div-menu">
 				<nav>
@@ -32,6 +32,9 @@
 		</header>
 		
 		<main class="main-section">
+			<div id="wizard">
+				<h2><span>🧙‍ You shall not pass without logging in!</span></h2>
+			</div>
 			<div class="forms-container">
 				<div id="log-form" style="display:block">
 					<form id="form-login" method="post" >
@@ -47,6 +50,7 @@
 							<input type="checkbox" checked="checked" name="remember">
 							<b>Remember me</b>
 						</label>
+
 						<div class="clearfix">
 							<button type="button" class="to-signup">Go to Sign Up</button>
 							<button type="button" class="login-button">Log In</button>
@@ -68,6 +72,13 @@
 						
 						<label ><b>Repeat Password</b></label>
 						<input type="password" id="pwd-sign-repeat" name="pwd-repeat" placeholder="Enter password again">
+
+						<label id="terms-cond">
+							<input type="checkbox" checked="checked" name="terms">
+							Sunt de acord cu <a href="">Termenii si conditiile</a> AdPost privind confidentialitatea si 
+								prelucrarea datelor cu caracter personal.
+						</label>
+
 						<div class="clearfix">
 							<button type="button" class="to-login">Go to Log In</button>
 							<button type="button" class="signup-button">Sign Up</button>
@@ -77,7 +88,7 @@
 			</div>
 		</main>
 		<footer>
-			<p>OLX - Web Application - Copyright & copy 2019</p>
+			<p>TripInspire - Web Application - Copyright & copy 2019</p>
 		</footer>
 		
 		<script src="./js/forms-switch.js"></script>

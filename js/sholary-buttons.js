@@ -1,8 +1,8 @@
 var topMargin = 0;
 var leftMargin = 0;
 
-let container1 = document.getElementsByClassName("skol")[0];
-let container2 = document.getElementsByClassName("skol")[1];
+var container1 = document.getElementsByClassName("skol")[0];
+var container2 = document.getElementsByClassName("skol")[1];
 
 container1.style.marginTop = parseInt((window.innerHeight / 2 ) - 75).toString() + "px";
 container2.style.marginTop = parseInt((window.innerHeight / 2 ) - 75).toString() + "px";
@@ -16,8 +16,9 @@ else if(window.innerWidth < 500){
     container2.style.marginLeft = parseInt((window.innerWidth / 2 ) - 75).toString() + "px";
 }
 
-window.onresize = function() {
+function resizeButtons() {
     leftMargin = parseInt(((window.innerWidth / 2 ) - 150) / 2);
+
     topMargin = parseInt((window.innerHeight / 2 ) - 75);
     let leftUnit = leftMargin.toString() + "px";
     let topUnit = topMargin.toString() + "px";
@@ -36,3 +37,5 @@ window.onresize = function() {
         container2.style.marginLeft = leftUnit;	
     }	
 }
+
+window.addEventListener('resize', resizeButtons);
