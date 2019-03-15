@@ -24,9 +24,13 @@ function validateTripForm(){
 }
 
 function addNewTrip(event){
+<<<<<<< HEAD
     
     var myTopics = document.getElementsByClassName("my-topics")[0];
     console.log(myTopics);
+=======
+    var myTopics = document.getElementsByClassName("my-topics")[0];
+>>>>>>> fb0a76288a98b5ff59bb618696aef95a8c555677
     var submitOk;
     
     submitOk = validateTripForm();
