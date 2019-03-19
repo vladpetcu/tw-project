@@ -150,7 +150,6 @@ body {
 }
 
 .content-container .new-topic #new-topic-form{
-<<<<<<< HEAD
     background-color: #d4d4d4;
     padding-top: 0.5em;
     padding: 1em;
@@ -229,98 +228,10 @@ hr{
 
 #interested-in li label img:hover{
     opacity: 1;
-=======
-    background-color: #333;
-    padding-top: 0.5em;
-    padding: 1em;
-    position: relative;
-}
-
-#new-topic-form .new-topic-inputs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 2.5em;
-}
-
-.content-container .new-topic #new-topic-form h3{
-    color: white;
-    margin-top: 0;
-    margin-bottom: 1em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-}
-
-hr{
-    border: 2px solid white;
-}
-
-#new-topic-form .new-topic-inputs input[type=text], 
-#new-topic-form .new-topic-inputs input[type=number],
-#new-topic-form .new-topic-inputs input[type=date]
-{
-    /* width: 49%; */
-    /* line-height: 1.5em; */
-    padding: 0.5em;
-    margin: 0.3em;
-    min-width: 20%;
-    flex: 1;
-    border-radius: 5px;
-    outline: none;
-}
-
-#new-topic-form .add-topic-button-div{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding-left: 0;
-    padding-right: 1.5em;
-    padding-bottom: 1em;
-    display: flex;
-    flex-direction: row;
-}
-
-#new-topic-form .add-topic-button-div #add-trip{
-    background: #4dff4d;
-    color: #333;
-    font-weight: bold;
-	border: none;
-	cursor: pointer;
-    min-width: 80px;
-    min-height: 30px;
-    opacity: 0.9;
-    border-radius: 5px;
-    margin-left: 0;
-    outline: none;
-}
-#new-topic-form #add-trip:hover{
-	background: #33c433;
-}
-
-.add-topic-button-div img{
-    max-height: 30px;
-    margin-right: 0.5em; 
-}
-
-.add-topic-button-div #verified{
-    display: none;
-}
-.add-topic-button-div #wrong{
-    display: none;
-}
-
- .content-container .news-container{
-    margin-top: 2em;
-    margin-left:1em;
-    margin-right: 1em;
-    padding: 1em;
-    background-color: #333;
->>>>>>> 2fc07f70eaefefdfa5384359ede60d1368a18447
 }
 
 #interested-in li label:before {
     background-color: white;
-<<<<<<< HEAD
     color: white;
     content: " ";
     display: block;
@@ -336,15 +247,6 @@ hr{
     transition-duration: 0.4s;
     transform: scale(0);
 }
-=======
-    min-height: 100px;
-    margin-bottom: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-} 
->>>>>>> 2fc07f70eaefefdfa5384359ede60d1368a18447
 
 #interested-in li input:checked + label:before {
     content: "✓";

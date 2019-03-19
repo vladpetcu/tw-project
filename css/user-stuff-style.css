@@ -8,10 +8,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-<<<<<<< HEAD
     border: 1px solid #2f4f4f;
-=======
->>>>>>> 2fc07f70eaefefdfa5384359ede60d1368a18447
 }
 #ad-panorama img{
     max-height: 100px;
