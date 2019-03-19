@@ -7,8 +7,8 @@
 }
 
 .content-container .notif-bar div{
-    background-color: #333;
-    color: white;
+    background: linear-gradient(to bottom,rgba( 255, 255, 255,0.9), rgba(47, 79, 79, 1));
+    color: #333;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
@@ -23,7 +23,7 @@
 }
 
 .notif-bar div hr{
-    border: 2px solid white;
+    border: 2px solid #333;
 }
 
 .notif-bar #notifications-ul{
@@ -36,8 +36,10 @@
 
 #notifications-ul li{
     padding: 1em;
+    color: #333;
 }
 
 #notifications-ul li:hover{
-    background-color: rgb(27, 27, 27);
+    background: linear-gradient(to top,rgba( 255, 255, 255,0.8), rgba(47, 79, 79, 1));
+    cursor: pointer;
 }

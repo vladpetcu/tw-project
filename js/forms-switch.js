@@ -27,9 +27,3 @@ function switchToLoginForm(){
 
 elem1.onclick = switchToSignupForm;
 elem2.onclick = switchToLoginForm;
-
-
-
-
-	
-	
