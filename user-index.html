@@ -46,6 +46,7 @@
             <div class="content-container">
                 <div class="new-topic">
                     <form id="new-topic-form" method="POST">
+<<<<<<< HEAD
                         <h3>Find a new trip &#x1F6EB;</h3>
                         <hr>
                         <!-- <div class="new-topic-inputs">
@@ -136,13 +137,57 @@
                         </div>
                     </form>
                 </div>
+=======
+                        <h3>Find a new trip</h3>
+                        <hr>
+                        <div class="new-topic-inputs">
+                            <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
+                            <input type="text" id="trip-coming" placeholder="Coming back in" onfocus="(this.type='date')">
+                            <input type="number" id="trip-min-cost" placeholder="Minimum cost &euro;">
+                            <input type="number" id="trip-max-cost" placeholder="Maximum cost &euro;">
+                            <input type="text" id="trip-type" placeholder="Vacation type" list="trip-types">
+                            <input type="number" id="trip-people" placeholder="People number">
+                            <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
+                            <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
+                            <input type="text" id="trip-destination" placeholder="Destination">
+                            <input type="text" id="trip-description" placeholder="Description/name">
+                        </div>
+                        <div class="add-topic-button-div">
+                            <img src="./images/verified.jpg" id="verified">
+                            <img src="./images/wrong.jpg" id="wrong">
+                            <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
+                        </div>
+                    </form>
+                    <datalist id="trip-types">
+                        <option value="vacation"></option>
+                        <option value="city-break"></option>
+                        <option value="honeymoon"></option>
+                    </datalist>
+                </div>
+               
+                <!-- <ul class="news-container">
+                    <li>
+                        <p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
+                    </li>
+                    <li>
+                        <p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
+                    </li>
+                    <li>
+                        <p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
+                    </li>
+                </ul> -->
+>>>>>>> 2fc07f70eaefefdfa5384359ede60d1368a18447
             </div>
         </main>
         <div id="bottom-line"></div>
 
+<<<<<<< HEAD
 
         <script src="./js/today-date.js"></script>
         <script src="./js/form-display.js"></script>
+=======
+        
+>>>>>>> 2fc07f70eaefefdfa5384359ede60d1368a18447
         <script src="./js/add-trip.js"></script>
     </body>
 </html>
