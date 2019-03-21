@@ -372,7 +372,11 @@ hr{
 }
 
 .speech-bubble {
+<<<<<<< HEAD
     position: relative;
+=======
+	position: relative;
+>>>>>>> 3d829fb473469a956099bf1f9e3c0bacbc83887a
     background: #333;
     color: white;
     max-width: 60px;

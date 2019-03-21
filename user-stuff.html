@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>TripInspire</title>
         <link rel="stylesheet" type="text/css" href="./css/user-index-style.css">
@@ -11,10 +11,11 @@
 
     </head>
     <body>
-        <div id="top-line"></div>
+        <div id="top-line">
+            <img src="./images/logo1.png" id="logo" alt="">
+        </div>
         <main class="main-section">
             <div class="menu-sidebar">
-                <img src="./images/logo1.png" id="logo" alt="">
                 <header class="main-header">
                     <div class="profile-container">
                         <img src="./images/default-user.jpg" alt="Avatar">
@@ -41,12 +42,6 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="search-container">
-                        <form >
-                            <input type="text" placeholder="Search..." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                </div>
                 </header>
             </div>
             <div class="content-container">
@@ -62,10 +57,32 @@
                     <img src="./images/ad-panorama/9.jpg" alt="">
                 </div>
                 <div class="topics-container">
-                    <h3>My trips</h3>
+                    <h3>&#x1F440;&nbsp;My trips</h3>
                     <hr>
                     <div class="my-topics">
                         <!-- span-uri cu cautari aici -->
+                        <span class="topics">
+                            <h4>Trip name/ identifier</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                            </p>
+                            <div class="topic-buttons-div">
+                                <button class="active-inactive-topic" value="on">Deactivate</button>
+                                <button class="delete-topic">Delete</button>
+                            </div>            
+                        </span>
+                        <span class="topics">
+                            <h4>Trip name/ identifier</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer Lorem Ipsum is simply d
+                            </p>
+                            <div class="topic-buttons-div">
+                                <button class="active-inactive-topic" value="on">Deactivate</button>
+                                <button class="delete-topic">Delete</button>
+                            </div>
+                        </span>
+                        <!-- end span-uri cu cautari -->
                         <div id="no-topics-displayed">
                             <p>You have no trips.<br>In order to have one, complete the form above.</p>
                             <div id="gif-container">
@@ -78,7 +95,7 @@
         </main>
         <div id="bottom-line"></div>
         
-        
+
         <script src="./js/trips-buttons.js"></script>
     </body>
 </html>

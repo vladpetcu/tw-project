@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>TripInspire</title>
         <link rel="stylesheet" type="text/css" href="./css/user-index-style.css">
@@ -10,13 +10,14 @@
 
     </head>
     <body>
-        <div id="top-line"></div>
+        <div id="top-line">
+            <img src="./images/logo1.png" id="logo" alt="">
+        </div>
         <main class="main-section">
             <div class="menu-sidebar">
-                <img src="./images/logo1.png" id="logo" alt="">
                 <header class="main-header">
                     <div class="profile-container">
-                        <img src="./images/default-user.jpg" alt="Avatar">
+                        <img src="./images/default-user.jpg" alt="">
                         <h2>User Name</h2>
 
                     </div>
@@ -40,60 +41,108 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="search-container">
-                        <form >
-                            <input type="text" placeholder="Search..." name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                </div>
                 </header>
             </div>
             <div class="content-container">
                 <div class="new-topic">
                     <form id="new-topic-form" method="POST">
-                        <h3>Find a new trip</h3>
+                        <h3>Find a new trip &#x1F6EB;</h3>
                         <hr>
-                        <div class="new-topic-inputs">
+                        <!-- <div class="new-topic-inputs">
                             <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
                             <input type="text" id="trip-coming" placeholder="Coming back in" onfocus="(this.type='date')">
-                            <input type="number" id="trip-min-cost" placeholder="Minimum cost &euro;">
-                            <input type="number" id="trip-max-cost" placeholder="Maximum cost &euro;">
-                            <input type="text" id="trip-type" placeholder="Vacation type" list="trip-types">
-                            <input type="number" id="trip-people" placeholder="People number">
                             <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
                             <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
-                            <input type="text" id="trip-destination" placeholder="Destination">
                             <input type="text" id="trip-description" placeholder="Description/name">
+                        </div> -->
+                        <div class="form-divs">
+                            <h4>‍‍&#x1F427;&nbsp;What are you interested in?</h4>
+                            <ul id="interested-in">
+                                <li>
+                                    <input type="checkbox" id="icb1">
+                                    <label for="icb1"><img src="./images/form/i1.jpg" alt=""></label>
+                                    <h5>City Break</h5>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="icb2">
+                                    <label for="icb2"><img src="./images/form/i2.jpg" alt=""></label>    
+                                    <h5>Adventure</h5>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="icb3">
+                                    <label for="icb3"><img src="./images/form/i3.jpg" alt=""></label>    
+                                    <h5>Culture & History</h5>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="icb4">
+                                    <label for="icb4"><img src="./images/form/i4.jpg" alt=""></label>    
+                                    <h5>Honeymoon</h5>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="icb5">
+                                    <label for="icb5"><img src="./images/form/i5.jpg" alt=""></label>    
+                                    <h5>Beaches & Islands</h5>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="icb6">
+                                    <label for="icb6"><img src="./images/form/i6.jpg" alt=""></label>
+                                    <h5>Family</h5>    
+                                </li>                            
+                            </ul>
+                        </div>
+                        <div class="form-divs">
+                            <h4>&#x1F5FA;&nbsp;Where are you traveling from?</h4>
+                            <div class="search-city-container">
+                                <input type="search" placeholder="Search city..." name="search-city" id="isearch-city">
+                            </div>
+                        </div>
+                        <div class="form-divs">
+                            <h4>&#x1F4B0;&nbsp;What is your maximum budget?</h4>
+                            <div class="budget-container">
+                                <div class="speech-bubble" id="budget-bubble">0</div>
+                                <input type="range" name="ibudgetname" min="0" max="1000" value="0" step="10" class="slider" id="ibudget">
+                            </div>
+                            <h4>&#x1F468;&#x200D;&#x1F469;&#x200D;&#x1F467;&#x200D;&#x1F466;&nbsp;&nbsp;&nbsp;How many people?</h4>
+                            <div class="people-container">
+                                <input type="number" min="1" value="1" id="ipeople">
+                            </div>
+                            <h5 id="h5-crt-budget">Current budget:  <span id="current-budget">0</span> &euro; / ticket</h5>
+                        </div>
+                        <div class="form-divs">
+                            <h4>&#x2708;&nbsp;What kind of flight do you want?</h4>
+                            <div class="flight-container">
+                                <select name="flights" id="flight-type">
+                                    <option value="oneway">One-way</option>
+                                    <option value="round">Round</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-divs" id="leaving-date-container">
+                                <h4>&#x1F3DD;&nbsp;Leaving on</h4>
+                                <input type="date" name="" id="ileavingdate">
+                            </div>                        
+                        <div class="form-divs" id="coming-date-container">
+                            <h4>&#x1F3E0;&nbsp;Coming back in</h4>
+                            <input type="date" name="" id="icomingdate">
+                        </div>
+                        <div class="form-divs">
+                            <h4>&#x1F60F;&nbsp;Give a suitable name to your trip</h4>
+                            <input type="text" name="" id="itripname">
                         </div>
                         <div class="add-topic-button-div">
-                            <img src="./images/verified.jpg" id="verified">
-                            <img src="./images/wrong.jpg" id="wrong">
+                            <img src="./images/verified.jpg" id="verified" alt="">
+                            <img src="./images/wrong.jpg" id="wrong" alt="">
                             <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
                         </div>
                     </form>
-                    <datalist id="trip-types">
-                        <option value="vacation"></option>
-                        <option value="city-break"></option>
-                        <option value="honeymoon"></option>
-                    </datalist>
                 </div>
-               
-                <!-- <ul class="news-container">
-                    <li>
-                        <p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                    <li>
-                        <p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                    <li>
-                        <p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                </ul> -->
             </div>
         </main>
         <div id="bottom-line"></div>
 
-        
+
+        <script src="./js/today-date.js"></script>
+        <script src="./js/form-display.js"></script>
         <script src="./js/add-trip.js"></script>
     </body>
 </html>

@@ -11,7 +11,7 @@ function playWithTrips(event){
             }
         }
         var targetTrip = document.getElementsByClassName("topics")[index]; 
-        
+
         if(clickedButton.value == "on"){
             //de oprit serverul din cautat  
             // apel functie (trebuie apelat si la stergere trip)                    
@@ -28,9 +28,7 @@ function playWithTrips(event){
             
             clickedButton.value = "on";
             clickedButton.innerText = "Deactivate";
-            if(window.getComputedStyle(targetTrip).getPropertyValue("opacity") < 1){
-                targetTrip.classList.remove("inactive-topics");
-            }
+            targetTrip.classList.remove("inactive-topics");
         }
     }
     else if(event.target && event.target.className == "delete-topic"){
