@@ -31,7 +31,8 @@ header nav .ul-navmenu{
 	padding-left: 10%;
 	padding-right: 10%;
 	overflow: hidden;
-	background-color: #333;
+	/* background-color: #333; */
+	background: linear-gradient(to top,rgba(0,0,0,0.8), #2f4f4f);
 }	
 
 li{
@@ -61,11 +62,11 @@ li a {
 	min-width:7em;
 	border: 2px solid antiquewhite;
 	border-radius:50%;
-	background:black;
+	background:#333;
 }
 
 li a:hover {
-	background-color: #111;
+	background-color: rgba(0,0,0,0.4);
 }
 
 body header .menu-button-container{
@@ -82,7 +83,7 @@ body header .menu-button-container .m-button {
   font-size: 2em;
   text-align: center;
   border-radius: 0.5em;
-  background-color: #2f4f4f;
+  background-color: #333;
   border: none;
   color: #ffffff;
 	cursor: pointer;
@@ -161,7 +162,6 @@ body .main-section{
 	border:#333 2px solid;
 	margin-top:0;
 	padding:0 0.4em 0.2em 0.4em;
-	border-radius:6px;
 	line-height:1.5em;
 	background-color: white;
 }
@@ -169,7 +169,7 @@ body .main-section{
 	max-height:4em;
 	max-width:4em;
 	border-radius:50%;
-	background:black;
+	background:white;
 	display:block;
 	margin-top:0.3em;
 	margin-right:auto;
@@ -191,7 +191,7 @@ footer{
 	padding-top:0.5em;
 	bottom:0;
 	left:0;
-	background-color:#333;
+	background: linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
 	color:white;
 	font-size:1.4em;
 	text-align:center;
@@ -240,7 +240,7 @@ footer{
 	}
 
 	header{
-		background:#333;
+		background: linear-gradient(to top,rgba(0,0,0,0.8), #2f4f4f);
 		min-height:80px;
 		height: 80px;
 		position: sticky;
@@ -248,7 +248,10 @@ footer{
 		width: 100%;
 		z-index: 2;
 	}
-	
+ 	header .menu-button-container{
+		background: linear-gradient(to bottom,rgba(0,0,0,0.8), #2f4f4f);
+	 }
+
 	body header .menu-container{
 		display: none;
 	}
