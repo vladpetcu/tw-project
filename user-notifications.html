@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="./css/user-index-style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="./css/user-notifications-style.css">
+        <link rel="stylesheet" type="text/css" href="./css/user-stuff-style.css">
 
     </head>
     <body>
@@ -24,19 +25,15 @@
                     </div>
                     <nav>
                         <ul>
-                            <!-- Home - news/top 5 alea din index/news -->
                             <li>
                                 <a href="user-index.html" title="Home"><i class="fa fa-fw fa-home"></i></a>
                             </li>
-                            <!-- My stuff - adaug cautare noua/ sterg vechi / eventual modificari -->
                             <li>
                                 <a href="user-stuff.html" title="My Stuff"><i class="fa fa-fw fa-user"></i></a>
                             </li>
-                            <!-- Notificari cu bulinuta rosie(+numar) referitoare la cautari active -->
                             <li>
                                 <a href="user-notifications.html" title="Notifications"><i class="fa fa-fw fa-newspaper-o"></i></a>
                             </li>
-                            <!-- Buton Log out -->
                             <li>
                                 <a href="index.html" title="Log Out"><i class="fa fa-fw fa-sign-out"></i></a>
                             </li>
@@ -47,28 +44,44 @@
             <div class="content-container">
                 <div class="notif-bar">
                     <div>
-                        <h3>My notifications</h3>
+                        <h3>&#x1f514;&nbsp;My notifications</h3>
                         <hr>
                         <ul id="notifications-ul">
-                            <li>All</li>
-                            <li>Unread</li>
+                            <li id="unread-notifications">Unread</li>
+                            <li id="all-notifications">All</li>
                         </ul>
                     </div>
                 </div>
-                
-
-
-                <!-- <ul class="news-container">
-                    <li>
-                        <p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                    <li>
-                        <p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                    <li>
-                        <p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop</p>
-                    </li>
-                </ul> -->
+                <div class="notif-container" style="display:block">
+                    <ol id="unread-notifications-ol">
+                        <li>
+                            <h5>un trip name</h5>
+                            <p>we found: ceva jmk</p>
+                            <div class="notif-but">
+                                <button class="mark-notif">Mark as read</button>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>un trip name</h5>
+                            <p>we found: ceva jmk</p>
+                            <div class="notif-but">
+                                <button class="mark-notif">Mark as read</button>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="notif-container" style="display:none">
+                    <ol id="all-notifications-ol">
+                            <li>
+                                <h5>trip name</h5>
+                                <p>we found: ceva jmk</p>
+                            </li>
+                            <li>
+                                <h5>trip name</h5>
+                                <p>we found: ceva jmk</p>
+                            </li>
+                    </ol>
+                </div>
 
 
 
@@ -76,6 +89,6 @@
         </main>
         <div id="bottom-line"></div>
 
-
+        <script src="./js/notif-switch.js"></script>
     </body>
 </html>

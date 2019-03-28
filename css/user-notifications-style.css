@@ -2,12 +2,11 @@
 .content-container .notif-bar{
     padding-left: 1em;
     padding-right: 1em;
-    padding-bottom: 1em;
     margin: 0; 
 }
 
 .content-container .notif-bar div{
-    background: linear-gradient(to bottom,rgba( 255, 255, 255,0.9), rgba(47, 79, 79, 1));
+    background: #d4d4d4;
     color: #333;
     padding-left: 1em;
     padding-right: 1em;
@@ -29,17 +28,84 @@
 .notif-bar #notifications-ul{
     display: flex;
     flex-direction: row;
-    color: white;    
+    color: #d4d4d4;    
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid #333;
 }
 
 #notifications-ul li{
-    padding: 1em;
+    padding: 0.8em;
+    padding-top: 4px;
+    padding-bottom: 4px;
     color: #333;
+    border: 1px solid #333;
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+.current-notif{
+  background: white;
 }
 
 #notifications-ul li:hover{
-    background: linear-gradient(to top,rgba( 255, 255, 255,0.8), rgba(47, 79, 79, 1));
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.notif-container{
+  margin-left: 1em;
+  margin-right: 1em;
+  min-height: 200px;
+  background: #d4d4d4;
+}
+
+.notif-container ol{
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+}
+
+.notif-container ol li{
+  background: white;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  border: 1px solid #333;
+  position: relative;
+}
+
+.notif-container ol li h5{
+  margin: 0;
+  padding: 3px;
+}
+
+.notif-container ol li p{
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 1.5em; 
+  padding: 0.5em;
+}
+
+#unread-notifications-ol li .notif-but{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+#unread-notifications-ol li .notif-but .mark-notif{
+  cursor: pointer;
+  outline: none;
+  min-width: 80px;
+  opacity: 0.9;
+  border:none;
+  border-radius: 5px;
+  background: #2f4f4f;
+  color: white;
+}
+
+#unread-notifications-ol li .notif-but .mark-notif:hover{
+  background: #162525;
+  opacity: 1;  
 }

@@ -46,15 +46,8 @@
             <div class="content-container">
                 <div class="new-topic">
                     <form id="new-topic-form" method="POST">
-                        <h3>Find a new trip &#x1F6EB;</h3>
+                        <h3>Let's find a new trip &#x1F6EB;</h3>
                         <hr>
-                        <!-- <div class="new-topic-inputs">
-                            <input type="text" id="trip-leaving" placeholder="Leaving on" onfocus="(this.type='date')">
-                            <input type="text" id="trip-coming" placeholder="Coming back in" onfocus="(this.type='date')">
-                            <input type="number" id="trip-min-temp" placeholder="Minimum temp &deg;C">
-                            <input type="number" id="trip-max-temp" placeholder="Maximum temp &deg;C">
-                            <input type="text" id="trip-description" placeholder="Description/name">
-                        </div> -->
                         <div class="form-divs">
                             <h4>‍‍&#x1F427;&nbsp;What are you interested in?</h4>
                             <ul id="interested-in">
@@ -119,15 +112,39 @@
                         </div>
                         <div class="form-divs" id="leaving-date-container">
                                 <h4>&#x1F3DD;&nbsp;Leaving on</h4>
-                                <input type="date" name="" id="ileavingdate">
+                                <input type="date" id="ileavingdate">
                             </div>                        
                         <div class="form-divs" id="coming-date-container">
                             <h4>&#x1F3E0;&nbsp;Coming back in</h4>
-                            <input type="date" name="" id="icomingdate">
+                            <input type="date" id="icomingdate">
+                        </div>
+                        <div class="form-divs" id="weather-preferences-container">
+                            <h4>&#x1F31E;&nbsp;What preferences you have for the weather?</h4>
+                            <ul class="weather-ul">
+                                <li class="weather-pref-li">
+                                    <label for="imindegrees">Minimum&nbsp;<input type="number" id="imindegrees">&nbsp;&deg;C</label>
+                                </li>
+                                <li class="weather-pref-li">
+                                    <label for="imaxdegrees">Maximum&nbsp;<input type="number" id="imaxdegrees">&nbsp;&deg;C</label>
+                                </li>
+                                <li class="weather-pref-li">
+                                    <label for="isky">
+                                        <select name="isky-options" id="">
+                                            <option value="sunny">Sunny</option>
+                                            <option value="cloudy">Cloudy</option>
+                                            <option value="broken-clouds-to">Broken clouds to</option>
+                                        </select>&nbsp;sky
+                                    </label>
+                                </li>
+                                <li class="weather-pref-li">
+                                    <label for="ihumidity">Humidity&nbsp;
+                                        <input type="number" min="0" max="100" id="imaxdegrees">&nbsp;%</label>
+                                </li>
+                            </ul>
                         </div>
                         <div class="form-divs">
                             <h4>&#x1F60F;&nbsp;Give a suitable name to your trip</h4>
-                            <input type="text" name="" id="itripname">
+                            <input type="text" id="itripname">
                         </div>
                         <div class="add-topic-button-div">
                             <img src="./images/verified.jpg" id="verified" alt="">

@@ -34,10 +34,10 @@ function addNewTrip(event){
         return false;
     }
     else if(submitOk == true){
-        /*let newSpan = document.createElement("span");
+        /*let newDiv = document.createElement("div");
         let newH4 = document.createElement('h4');
         let newParagraph = document.createElement('p');
-        let newDiv = document.createElement('div');
+        let newDivBut = document.createElement('div');
         let newButton1 = document.createElement('button');
         let newButton2 = document.createElement('button');
         
