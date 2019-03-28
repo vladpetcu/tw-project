@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    margin:0 auto;
+	margin:0 auto;
     padding:0;   
     min-height:100%;
     position: relative;
@@ -39,9 +39,9 @@ body {
     padding-left: 8vw;
     padding-right: 8vw;
     background-image:  url('../images/back2.jpg');
-    background-position: center;
-    background-repeat:  no-repeat;
-    background-attachment: fixed;
+	background-position: center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
     background-size:  cover;
 }
 
@@ -274,8 +274,8 @@ hr{
     background: #4dff4d;
     color: #333;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
+	border: none;
+	cursor: pointer;
     min-width: 80px;
     min-height: 30px;
     opacity: 0.9;
@@ -284,13 +284,8 @@ hr{
     margin-left: 0;
     outline: none;
 }
-<<<<<<< HEAD
 #add-trip:hover{
 	background: #33c433;
-=======
-#new-topic-form #add-trip:hover{
-    background: #33c433;
->>>>>>> 49f16b5b1f5e05f558b7a7d35bba6d594be9ef26
 }
 
 .add-topic-button-div img{
@@ -377,11 +372,7 @@ hr{
 }
 
 .speech-bubble {
-<<<<<<< HEAD
-    position: relative;
-=======
 	position: relative;
->>>>>>> 3d829fb473469a956099bf1f9e3c0bacbc83887a
     background: #333;
     color: white;
     max-width: 60px;
