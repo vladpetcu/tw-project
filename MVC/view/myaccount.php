@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>TripInspire</title>
-			<link rel="stylesheet" type="text/css" href="./css/index-style.css">
-			<link rel="stylesheet" type="text/css" href="./css/myaccount-style.css">
+			<link rel="stylesheet" type="text/css" href="../../css/index-style.css">
+			<link rel="stylesheet" type="text/css" href="../../css/myaccount-style.css">
 	
 	</head>
 	
@@ -14,20 +14,20 @@
 		<header id="index-header">
 			<div class="menu-button-container" >
 				<button class="m-button" id="mbut" style="vertical-align:middle"><span>Menu</span></button>
-				<div class="m-img"><img src="./images/logo1.png" alt=""></div>
+				<div class="m-img"><img src="../../images/logo1.png" alt=""></div>
 			</div>
 			<div class="menu-container" id="div-menu">
 				<nav>
 					<ul class="ul-navmenu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="myaccount.html">Account</a></li>
-						<li><a href="news.html">News</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="outindex.php">Home</a></li>
+						<li><a href="myaccount.php">Account</a></li>
+						<li><a href="news.php">News</a></li>
+						<li><a href="about.php">About</a></li>
 					</ul>				
 				</nav>
 			</div>	
 			<div id="logo-div">
-					<a class="logo" href="./index.html"><img src="./images/logo2.png" alt="Avatar"></a>
+					<a class="logo" href="outindex.php"><img src="../../images/logo2.png" alt="Avatar"></a>
 			</div>
 		</header>
 		
@@ -37,14 +37,14 @@
 			</div>
 			<div class="forms-container">
 				<div id="log-form" style="display:block">
-					<form id="form-login" method="post" >
+					<form id="form-login" action="../controller/login-ctrl.php" method="POST" >
 						<h1>Log In Now</h1>
 						<hr>
 						<label><b>Username</b></label>
-						<input type="text" id="nume-login" name="uid" placeholder="Enter username or email">
+						<input type="text" id="nume-login" name="uid" placeholder="Enter username or email" required>
 						
 						<label ><b>Password</b></label>
-						<input type="password" id="pwd-login" name="pwd" placeholder="Enter password">
+						<input type="password" id="pwd-login" name="pwd" placeholder="Enter password" patterm=".{5,}" required>
 						
 						<label id="rememberme">
 							<input type="checkbox" checked="checked" name="remember">
@@ -53,35 +53,35 @@
 
 						<div class="clearfix">
 							<button type="button" class="to-signup">Go to Sign Up</button>
-							<button type="button" class="login-button">Log In</button>
+							<button type="submit" name="login-but" class="login-button">Log In</button>
 						</div>
 					</form>
 				</div>
 				<div id="sign-form" style="display:none">
-					<form id="form-signup" method="post" >
+					<form id="form-signup" action="../controller/signup-ctrl.php" method="POST" >
 						<h1>Sign Up Now</h1>
 						<hr>
 						<label ><b>Username</b></label>
-						<input type="text" id="nume-sign" name="uid" placeholder="Enter username">
+						<input type="text" id="nume-sign" name="uid" placeholder="Enter username" patterm=".{5,}" required>
 						
 						<label ><b>Email</b></label>
-						<input type="text" id="mail-sign" name="mail" placeholder="Enter email">
+						<input type="text" id="mail-sign" name="mail" placeholder="Enter email" pattern="^\w+([\.-_]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required>
 						
 						<label ><b>Password</b></label>
-						<input type="password" id="pwd-sign" name="pwd" placeholder="Enter password">
+						<input type="password" id="pwd-sign" name="pwd" placeholder="Enter password" patterm=".{5,}" required>
 						
 						<label ><b>Repeat Password</b></label>
-						<input type="password" id="pwd-sign-repeat" name="pwd-repeat" placeholder="Enter password again">
+						<input type="password" id="pwd-sign-repeat" name="pwd-repeat" placeholder="Enter password again" patterm=".{5,}" required>
 
 						<label id="terms-cond">
-							<input type="checkbox" checked="checked" name="terms">
-							Sunt de acord cu <a href="">Termenii si conditiile</a> AdPost privind confidentialitatea si 
+							<input type="checkbox" id="terms-sign" checked="checked" name="terms" >
+							Sunt de acord cu <a href="">Termenii si conditiile</a> TripInspire privind confidentialitatea si 
 								prelucrarea datelor cu caracter personal.
 						</label>
 
 						<div class="clearfix">
 							<button type="button" class="to-login">Go to Log In</button>
-							<button type="button" class="signup-button">Sign Up</button>
+							<button type="submit" name="signup-but" class="signup-button">Sign Up</button>
 						</div>
 					</form>
 				</div>
@@ -91,7 +91,7 @@
 			<p>TripInspire - Web Application - Copyright & copy 2019</p>
 		</footer>
 		
-		<script src="./js/forms-switch.js"></script>
-		<script src="./js/menu-button.js"></script>
+		<script src="../../js/forms-switch.js"></script>
+		<script src="../../js/menu-button.js"></script>
 	</body>
 </html>

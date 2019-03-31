@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>TripInspire</title>
-			<link rel="stylesheet" type="text/css" href="./css/index-style.css">
-			<link rel="stylesheet" type="text/css" href="./css/news-style.css">
+			<link rel="stylesheet" type="text/css" href="../../css/index-style.css">
+			<link rel="stylesheet" type="text/css" href="../../css/news-style.css">
 
 	</head>
 	
@@ -14,20 +14,20 @@
 		<header id="index-header">
 			<div class="menu-button-container" >
 				<button class="m-button" id="mbut" style="vertical-align:middle"><span>Menu</span></button>
-				<div class="m-img"><img src="./images/logo1.png" alt=""></div>
+				<div class="m-img"><img src="../../images/logo1.png" alt=""></div>
 			</div>
 			<div class="menu-container" id="div-menu">
 				<nav>
 					<ul class="ul-navmenu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="myaccount.html">Account</a></li>
-						<li><a href="news.html">News</a></li>
-						<li><a href="about.html">About</a></li>
+						<li><a href="outindex.php">Home</a></li>
+						<li><a href="myaccount.php">Account</a></li>
+						<li><a href="news.php">News</a></li>
+						<li><a href="about.php">About</a></li>
 					</ul>				
 				</nav>
 			</div>	
 			<div id="logo-div">
-					<a class="logo" href="./index.html"><img src="./images/logo2.png" alt="Avatar"></a>
+					<a class="logo" href="outindex.php"><img src="../../images/logo2.png" alt="Avatar"></a>
 			</div>
 		</header>
 		
@@ -110,7 +110,7 @@
 		<footer>
 			<p>TripInspire - Web Application - Copyright & copy 2019</p>
 		</footer>
-		<script src="./js/get-recent-news.js"></script>
-		<script src="./js/menu-button.js"></script>
+		<script src="../../js/get-recent-news.js"></script>
+		<script src="../../js/menu-button.js"></script>
 	</body>
 </html>
