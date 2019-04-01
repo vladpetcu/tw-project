@@ -1,3 +1,16 @@
+function displayPinguin(){
+    var pinguin = document.getElementById("no-topics-displayed");
+    if(document.getElementsByClassName("topics").length == 0){
+        if(window.getComputedStyle(pinguin).getPropertyValue("display") == "none"){
+            pinguin.style.display = "flex";
+        }
+    }
+    else{
+        console.log("pl");
+        pinguin.style.display = "none";
+    }
+}
+
 function playWithTrips(event){
 
     if(event.target && event.target.className == "active-inactive-topic"){
@@ -50,13 +63,8 @@ function playWithTrips(event){
         }
 
     }
-
-    if(document.getElementsByClassName("topics").length == 0){
-        var pinguin = document.getElementById("no-topics-displayed");
-        if(window.getComputedStyle(pinguin).getPropertyValue("display") == "none"){
-            pinguin.style.display = "flex";
-        }
-    }
+    displayPinguin();
 }
 
 document.addEventListener('click', playWithTrips);
+window.onload = displayPinguin;

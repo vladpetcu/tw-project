@@ -27,3 +27,12 @@ function switchToLoginForm(){
 
 elem1.onclick = switchToSignupForm;
 elem2.onclick = switchToLoginForm;
+
+document.getElementById('sign-form').addEventListener('submit', function(event){
+	let p1 = document.getElementById('pwd-sign');
+	let p2 = document.getElementById('pwd-sign-repeat');
+	let ch = document.getElementById('terms-sign');
+	if(p1.value != p2.value){
+		event.preventDefault();
+	}
+});

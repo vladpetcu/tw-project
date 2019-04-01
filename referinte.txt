@@ -35,3 +35,38 @@ Intrebari!!!!!!!
 		
 		
 !!!!!!LOCATIA E SUGERATA, NU DATA CA INPUT
+
+
+TASKURI ARHITECTURA:
+
+Cristi:
+		
+
+Iulia:
+	Log-in - model: validare user in BD, validare parola
+		   - view: primeste submit de la user (in pag. de login)
+		   - controller: validare user, redirect catre view specific (user-index page)
+	404 page
+	
+Vlad:  
+	Sign-up - model: validare user(nu mai exista in BD) + insert in BD;
+			- view: primeste submit de la user (in pag. de sign-up);
+			- controller: validare date user din nou, redirect la login;
+	DB-connection - controller: seteaza conexiunea cu bd (404 in caz de eroare);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -99,7 +99,7 @@
     background: #690202;
 }
 
-.my-topics #no-topics-displayed{
+#no-topics-displayed{
     background-color: #E1E8F0;
     width: 100%;
     padding: 1em;
