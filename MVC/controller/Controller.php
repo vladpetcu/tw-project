@@ -6,14 +6,13 @@ include_once("MVC/view/View.php");
     public $model, $view;
     
     public function __construct(){
-        $this->model = new Model();
         $this->view = new View();
+        $this->model = new Model();
     }
 
     function runApp(){
-        $this->model->startAppSession();
-        $this->view->initHeaderLocation("outindex");
+      $this->view->initHeaderLocation("outindex");
+      $this->model->checkDBConnection();
     }
   };
-
 ?>

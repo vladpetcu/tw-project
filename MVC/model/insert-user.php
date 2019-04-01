@@ -9,6 +9,8 @@
 
         if (mysqli_connect_errno()){
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            header("Location: ../view/404.php?empty-fields");
+            exit();
         }
 
         $sql = "SELECT * FROM users WHERE username = '$uid';";
@@ -32,6 +34,7 @@
 
         if (mysqli_connect_errno()){
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
+            exit();
         }
 
         $sql = "INSERT INTO users (username, email, password ) VALUES ('$uid', '$mail', '$hashedPwd');";
