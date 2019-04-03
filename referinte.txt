@@ -55,9 +55,10 @@ Vlad:
 	DB-connection - controller: seteaza conexiunea cu bd (404 in caz de eroare);
 
 
-
-
-
+AJAX_example
+https://stackoverflow.com/questions/30844919/sending-data-to-php-file-with-pure-js-ajax
+AJAX_api_call_example
+https://gomakethings.com/ajax-and-apis-with-vanilla-javascript/
 
 
 

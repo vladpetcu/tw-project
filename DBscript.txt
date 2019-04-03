@@ -1,0 +1,6 @@
+create table users (
+   id int(20) not null AUTO_INCREMENT PRIMARY KEY,
+   username varchar(256) not null,
+   email varchar(256) not null,
+   password varchar(256) not null 
+);

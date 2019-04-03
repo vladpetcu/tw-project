@@ -1,5 +1,4 @@
 <?php
-    // session_start();
     if(isset($_POST["signup-but"])){
         include_once "../model/db-connection.php";
         include_once "../model/insert-user.php";
@@ -36,9 +35,6 @@
                             exit();    
                         }
                         else{
-                            // $_SESSION['iduser'] = $insertAnswer['id'];
-                            // $_SESSION['user'] = $insertAnswer['username'];
-                            // $_SESSION['mail'] = $insertAnswer['email'];
                             header("Location: ../view/myaccount.php?signup=success");
                             exit();
                         }

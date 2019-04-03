@@ -71,6 +71,27 @@ body {
     flex-wrap: wrap;
 }
 
+#profile-form input[type="file"]{
+    position: absolute; 
+    z-index: -1;
+    overflow: hidden;
+}
+
+#profile-form label{
+    display: inline-block;
+    position: absolute;
+    /* z-index:200; */
+    margin-top: -30px;
+    margin-left:-60px;
+}
+
+#profile-form label img{
+    border-radius: 10%;
+    border: none;
+    max-height: 25px;
+    max-width: 25px;
+}
+
 .menu-sidebar .main-header nav{
     height: 50px;
     margin-top: 5px;

@@ -1,7 +1,22 @@
 <header class="main-header">
     <div class="profile-container">
-        <img src="../../images/default-user.jpg" alt="">
-        <h2>User Name</h2>
+        <?php
+            if(isset($_SESSION["iduser"])){
+                include_once '../controller/profile-render.php';
+                $picture = getUserPic();
+                echo '<img src="../../images/profiles/' . $picture . '" alt="">';
+                echo '<form id="profile-form" name="profile-form-name" action="../controller/profile-render.php" method="POST" enctype="multipart/form-data">
+                        <label for="profile-pic-input"><img src="../../images/pic-upload.png" alt=""></label>
+                        <input type="file" name="profile-pic" id="profile-pic-input">
+                    </form>';    
+                $name = getUserName();
+                echo '<h2>' . $name . '</h2>';
+            }
+            else{
+                header("Location: 404.php?header-error");
+                exit();
+            }
+        ?>
 
     </div>
     <nav>

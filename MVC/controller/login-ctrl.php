@@ -21,9 +21,6 @@
                 $_SESSION['iduser'] = $loginAnswer['id'];
                 $_SESSION['user'] = $loginAnswer['username'];
                 $_SESSION['mail'] = $loginAnswer['email'];
-                $v1=$_SESSION['iduser'];
-                $v2=$_SESSION['user'];
-                $v3=$_SESSION['mail'];
                 header("Location: ../view/user-index.php?login=success");
                 exit();
             }

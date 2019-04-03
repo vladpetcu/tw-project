@@ -1,5 +1,5 @@
 <?php
-	include_once 'init-h.php';
+	include_once '../controller/init-h.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

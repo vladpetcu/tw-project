@@ -1,5 +1,6 @@
 <?php
-	include_once 'init-uh.php';
+    include_once '../controller/init-uh.php';
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,6 +73,7 @@
         </main>
         <div id="bottom-line"></div>
 
+        <script src="../../js/profile-picture.js"></script>
         <script src="../../js/notif-switch.js"></script>
     </body>
 </html>

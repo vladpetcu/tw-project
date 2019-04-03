@@ -40,12 +40,16 @@
         $sql = "INSERT INTO users (username, email, password ) VALUES ('$uid', '$mail', '$hashedPwd');";
         mysqli_query($conn , $sql);
 
+        
         $sql = "SELECT * FROM users WHERE username = '$uid';";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
-        mysqli_close($conn);
-
+        
         if($row = mysqli_fetch_assoc($result)){
+            $idUser = $row['id'];
+            $sqlPic = "INSERT INTO profileimgs (userid, status, extension ) VALUES ('$idUser', 0, 'null' );";
+            mysqli_query($conn , $sqlPic);
+            mysqli_close($conn);
             return $row;
         }
     

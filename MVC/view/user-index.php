@@ -1,5 +1,6 @@
 <?php
-	include_once 'init-uh.php';
+    include_once '../controller/init-uh.php';
+    include '../controller/profile-render.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -137,6 +138,7 @@
         <div id="bottom-line"></div>
 
 
+        <script src="../../js/profile-picture.js"></script>
         <script src="../../js/today-date.js"></script>
         <script src="../../js/form-display.js"></script>
         <script src="../../js/add-trip.js"></script>

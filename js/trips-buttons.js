@@ -6,13 +6,12 @@ function displayPinguin(){
         }
     }
     else{
-        console.log("pl");
         pinguin.style.display = "none";
     }
 }
 
 function playWithTrips(event){
-
+    
     if(event.target && event.target.className == "active-inactive-topic"){
         var tripsList = document.getElementsByClassName("my-topics")[0];
         var clickedButton = event.target;
