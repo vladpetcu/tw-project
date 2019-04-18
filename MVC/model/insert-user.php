@@ -45,6 +45,7 @@
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
         
+        
         if($row = mysqli_fetch_assoc($result)){
             $idUser = $row['id'];
             $sqlPic = "INSERT INTO profileimgs (userid, status, extension ) VALUES ('$idUser', 0, 'null' );";

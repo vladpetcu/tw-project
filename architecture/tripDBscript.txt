@@ -1,0 +1,40 @@
+create table users (
+   id int(20) not null AUTO_INCREMENT PRIMARY KEY,
+   username varchar(256) not null,
+   email varchar(256) not null,
+   password varchar(256) not null 
+);
+/
+create table profileimgs (
+   id int(20) not null AUTO_INCREMENT PRIMARY KEY,
+   iduser int(20) not null,
+   status int(10) not null,
+   extension varchar(10) not null 
+);
+/
+create table trips (
+	id int(20) not null AUTO_INCREMENT PRIMARY KEY,
+	iduser int(20) not null,
+	name varchar(256) not null,
+    status int(10) not null,
+	interests varchar(256) not null,
+	fromcity varchar(256) not null,
+	maxbudget int(20) not null,
+	flight varchar(256) not null,
+	leaving datetime not null,
+	coming datetime not null,
+	mindeg int(20) not null,
+	maxdeg int(20) not null,
+	sky varchar(256) not null,
+	humidity int(20) not null
+);
+/
+create table notifications(
+	id int(20) not null AUTO_INCREMENT PRIMARY KEY,
+	idtrip int(20) not null,
+	iduser int(20) not null,
+	fromcity varchar(256) not null,
+	tocity varchar(256) not null,
+	maxbudget int(20) not null,
+	flight varchar(256) not null
+);
