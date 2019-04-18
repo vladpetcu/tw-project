@@ -25,7 +25,7 @@
             </div>
             <div class="content-container">
                 <div class="new-topic">
-                    <form id="new-topic-form" method="POST">
+                    <form id="new-topic-form" action="" method="POST">
                         <h3>Let's find a new trip &#x1F6EB;</h3>
                         <hr>
                         <div class="form-divs">
@@ -129,7 +129,7 @@
                         <div class="add-topic-button-div">
                             <img src="../../images/verified.jpg" id="verified" alt="">
                             <img src="../../images/wrong.jpg" id="wrong" alt="">
-                            <button type="submit" id="add-trip" title="Add topic">Add Trip</button>
+                            <button type="submit" id="add-trip" title="Add trip">Add Trip</button>
                         </div>
                     </form>
                 </div>
@@ -141,6 +141,6 @@
         <script src="../../js/profile-picture.js"></script>
         <script src="../../js/today-date.js"></script>
         <script src="../../js/form-display.js"></script>
-        <script src="../../js/add-trip.js"></script>
+        <script src="../../js/add-trip.js" type="module"></script>
     </body>
 </html>

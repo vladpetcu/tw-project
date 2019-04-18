@@ -1,3 +1,5 @@
+import { ajaxFunct } from './ajax.js';
+
 
 async function showValidationAnswer(status){
     var imgGreen = document.getElementById("verified");
@@ -69,6 +71,9 @@ function addNewTrip(event){
         */
 
         event.preventDefault();
+
+        // ajaxFunct();
+
         return true;
     }
     

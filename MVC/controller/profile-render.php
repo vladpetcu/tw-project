@@ -33,7 +33,7 @@
         $fileTmpName = $_FILES["profile-pic"]['tmp_name'];
         $fileSize = $_FILES["profile-pic"]['size'];
         $fileError = $_FILES["profile-pic"]['error'];
-        $fileType = $_FILES["profile-pic"]['type'];        
+        $fileType = $_FILES["profile-pic"]['type'];
 
         $fileExt = explode('.', $fileName);
         $fileActualExt = strtolower(end($fileExt));
