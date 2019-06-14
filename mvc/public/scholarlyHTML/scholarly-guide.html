@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Scholarly Guide</title>
+    <link rel="stylesheet" href="css/scholarly.min.css">
+    <script type="text/javascript" src="js/scholarly.min.js"></script>
+  </head>
+  <body prefix="schema: http://schema.org">
+    <header>
+      <div class="banner">
+        <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+        <div class="status">TripInspire</div>
+      </div>
+      <h1>Ghid de utilizare</h1>
+    </header>
+    <!--
+      XXX
+      - check refs
+      - the math example has too much maths
+      - bring back some of the old style
+      - make semantics, validation, processing sub-sections of each structural element
+      - have a section before that for general constructs
+        - explain why use RDFa
+        - explain our patterns: RDFa, roles
+      - figure captions need to get set throughout
+      - dedication? see doc-dedication
+      - syntactic constraints (prefix)
+      - needs more sthenurines
+      - examples of everything
+      - some notes on using Semantic CSS
+      - needs more RDFa in the spec itself
+    -->
+    <div role="contentinfo">
+      <dl>
+        <dt>Autori</dt>
+        <dd>
+          Iulia Beldiman
+          &amp; Vlad Petcu &amp; Cristi Butnaru
+        </dd>
+        <dt>Grup proiect</dt>
+        <dd>
+          <a href="https://github.com/petcuvlad/TWproject">Github-TripInspire</a>
+        </dd>
+        <dt>Coordonator</dt>
+        <dd>
+          Prof. Ciprian Amariei
+        </dd>
+      </dl>
+    </div>
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+      <h2>Abstract</h2>
+      <p>
+        Aplicația Web ofera sugestii de călătorie pe baza unor constrângeri/preferințe, de exemplu: “doresc o vacanță 
+        activă de 7-10 zile la o temperatură mai mare de 20°C la mare” sau “doresc un city break în Europa care să 
+        coste mai puțin de 200 EUR de persoană”. Sistemul va gestiona diverse criterii de selectare. Pe baza acestor
+         criterii, se monitorizeaza prețurile biletelor de avion pentru destinațiile ce se potrivesc, alertandu-se
+          utilizatorii când criteriile sunt îndeplinite.
+          Un utilizator poate avea una sau mai multe căutări de vacanțe active.
+      </p>
+    </section>
+    <section id="introduction" role="doc-introduction">
+      <!-- review? -->
+      <h2>Introducere</h2>
+      <p>
+        Acest ghid prezinta informatii referitoare la functionalitatea TripInspire, interactiunea cu utilizatorul si
+        functionalitatile de baza. Cuprinde deasemenea si un clip demonstrativ.
+      </p>
+    </section>
+    <section id="structure">
+      <!-- review? -->
+      <h2>Functionalitati</h2>
+      <p>
+        Aplicatia este impartita in doua mari sectiuni: paginile vizibile tuturor si contul utilizatorului. 
+      </p>
+      <section id="Root">
+        <!-- review? -->
+        <h3>Pagina Home</h3>
+        <p>
+          Pagina default pe care o vede orice persoana care acceseaza aplicatia, contine detalii despre ce gasesti pe site 
+          si anumite instructiuni despre cum sa te inregistrezi si cum sa iti planifici vacanta.
+        </p>
+      </section>
+      <section id="article">
+        <!-- review? -->
+        <h3>Pagina Account</h3>
+        <p>
+          Userii si admin-ul se pot loga pe aceasta pagina, spre profilul lor.
+          Noii vizitatori isi pot crea un cont apasand butonul de "Sign Up" si completand formularul de inscriere. 
+        </p>
+      </section>
+      <section id="hunk">
+        <!-- review? -->
+        <h3>Pagina News</h3>
+        <p>
+          Contine cele mai convenabile bilete pentru calatorii din ziua respectiva, informatii
+          legate de pret, distanta si poze specifice locatiilor.
+        </p>
+      </section>
+      <section id="inline">
+        <!-- review? -->
+        <h3>Pagina About</h3>
+        <p>
+          Ofera acces la raportul tehnic al aplicatiei si la ghidul de utilizare al acesteia.
+        </p>
+      </section>
+      <section id="references">
+        <!-- review? -->
+        <h3>Pagina Home (User)</h3>
+        <p>
+            Pagina particulara fiecarui user logat, unde isi poate personaliza imaginea de profil, poate bifa preferintele sale in vedea adaugarii unei noi cautari.
+            Daca userul bifeaza prea multe particularitati excursiei lui exista posibilitatea unei asteptari mai mari.
+            Daca userul nu introduce un oras valid, cererea lui nu va fi procesata, ci va fi avertizat printr-un mesaj.
+            Toate datele din formular trebuie sa fie valide.
+        </p>
+      </section>
+      <section id="interactive">
+        <!-- review? -->
+        <h3>Pagina MyStuff</h3>
+        <p>
+            Odata creata o cerere,  in sectiunea "MyStuff", utilizatorul are acces la istoricul cautarilor sale, cautari pe care le poate sterge sau activa/dezactiva.
+            In acest caz, nu va mai primi notificari despre trip-ul sters sau dezactivat.
+        </p>
+      </section>
+      <section id="HTMLRoles">
+        <!-- review? -->
+        <h3>Pagina MyNotifications</h3>
+        <p>
+            Pagina unde userul primeste sugestii pentru excursiile active.
+            Butonul "Go To" redirectioneaza catre booking-ul biletelor care pot fi alese.
+        </p>
+      </section>
+      <section id="validate">
+        <!-- review? -->
+        <h3>LogOut</h3>
+        <p>
+            Userul este redirectionat catre pagina Home (default).
+        </p>
+      </section>
+    </section>
+    <section id="semantics">
+      <!-- review? -->
+      <h2>Demo</h2>
+      <video style="width: 100%; height: auto;" id="demo-video">
+        <source src="https://tripinspire.localhost/mvc/public/demo/demo.mp4" type="video/mp4">
+      </video>
+    </section>
+    <section id="biblio-references">
+        <h2>References</h2>
+        <dl>
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="https://www.w3schools.com/">
+          <cite property="schema:name">
+            <a href="https://www.w3schools.com/">
+              W3schools
+            </a></cite>
+          </dd>
+      
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="https://stackoverflow.com/">
+            <cite property="schema:name">
+              <a href="https://stackoverflow.com/">
+                Stackoverflow
+              </a></cite>
+            </dd>
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="https://www.youtube.com/watch?v=xb8aad4MRx8">
+              <cite property="schema:name">
+                <a href="https://www.youtube.com/watch?v=xb8aad4MRx8">
+                  mmtuts
+                </a></cite>
+          </dd>
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="http://php.net/">
+            <cite property="schema:name">
+              <a href="http://php.net/">
+                PHP.net
+              </a></cite>
+          </dd>
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="https://iampava.com/tw/">
+          <cite property="schema:name">
+            <a href="https://iampava.com/tw/">
+              IamPava
+            </a></cite>
+          </dd>
+          <dd property="schema:citation" typeof="schema:ScholarlyArticle" resource="https://profs.info.uaic.ro/~busaco/teach/courses/web/index.html">
+            <cite property="schema:name">
+              <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/index.html">
+                Sabin-Corneliu Buraga
+              </a></cite>
+          </dd>
+        
+        </dl>
+      </section>
+  </body>
+</html>
