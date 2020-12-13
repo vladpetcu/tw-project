@@ -1,4 +1,4 @@
 # tw_project
-web app
+web app to handle flights
 
-## FII
+## FII - Web Technologies project
